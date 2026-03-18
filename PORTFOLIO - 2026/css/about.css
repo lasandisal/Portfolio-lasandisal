@@ -1,0 +1,940 @@
+/* ==========================================================================
+   1. GLOBAL VARIABLES & ROOT
+   ========================================================================== */
+:root {
+    --bg-dark: #0D0505; 
+    --bg-mid: #1A0B0B;  
+    --bg-light: #3D2222; 
+    --accent-red: #E63946; 
+    --text-white: #F8F9FA;
+    --text-dim: rgba(248, 249, 250, 0.5); 
+    --glass: rgba(255, 255, 255, 0.03); 
+    --glass-border: rgba(255, 255, 255, 0.08);
+    --font-main: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    --font-heading: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* ==========================================================================
+   2. GLOBAL RESETS & BASE STYLES
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Bebas Neue';
+    src: url('../fonts/Bebas_Neue/BebasNeue-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; 
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-mid);
+    color: var(--text-white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ==========================================================================
+   3. SHARED ANIMATIONS (KEYFRAMES)
+   ========================================================================== */
+@keyframes sparkle-roll {
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes icon-pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
+    50% { transform: scale(1.05); box-shadow: 0 0 20px 2px rgba(230, 57, 70, 0.15); }
+}
+
+/* ==========================================================================
+   4. COMPONENT STYLES (REUSABLE)
+   ========================================================================== */
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 600;
+    margin-left: 10px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.btn-white { background: #fff; color: #000; }
+.btn-black { background: var(--bg-dark); color: #fff; border: 1px solid var(--glass-border); }
+
+/* ==========================================================================
+   5. HEADER & NAVIGATION
+   ========================================================================== */
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 1%;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    background: #3d22228a; 
+    backdrop-filter: none;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-red);
+}
+
+.logo span { color: var(--text-white); }
+
+nav ul {
+    display: flex;
+    list-style: none;
+    background: var(--glass);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    font-weight: bold;
+    padding: 6px; 
+    margin: 0;
+    width: fit-content;
+    gap: 5px;
+}
+
+nav ul li a {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+nav ul li a.active, nav ul li a:hover {
+    background: var(--text-white);
+    color: #000;
+    border-radius: 50px;
+}
+
+
+
+/* --- About Hero Layout --- */
+#about-hero {
+    display: flex !important; /* Forces the internal layout back to flex */
+    flex-direction: row;      /* Keeps text on left, photo on right */
+    width: 100%;
+    min-height: 100vh;
+    padding: 120px 8% 60px;
+    gap: 40px;
+    background: linear-gradient(180deg, var(--bg-light) 0%, var(--bg-mid) 100%);
+}
+
+.intro-text {
+    flex: 1.2;
+    z-index: 5;
+    margin-left: 10%;
+}
+
+.intro-text h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.intro-text h1 span { color: var(--accent-red); }
+
+.intro-text p {
+    font-size: 1.1rem;
+    color: var(--text-dim);
+    line-height: 1.8;
+    max-width: 580px;
+    margin-bottom: 40px;
+}
+
+/* Download Button Styling */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 32px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
+    margin-left: 30%;
+}
+
+.btn-download:hover {
+    background: var(--accent-red);
+    border-color: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(230, 57, 70, 0.3);
+}
+
+/* --- Profile Frame & Animated Radar --- */
+.profile-frame {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-frame img {
+    width: 300px; /* Adjust size based on your image */
+    height: auto;
+    z-index: 10;
+    position: relative;
+    /* This makes the image pop out from the circles */
+    filter: drop-shadow(0 20px 50px rgba(0,0,0,0.5));
+    margin-top: -40px;
+}
+
+.decorative-circles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    margin-top: -40px;
+}
+
+.circle {
+    position: absolute;
+    /* Increased border from 1px to 2px for better visibility */
+    border: 2px solid rgba(255, 255, 255, 0.843); 
+    border-radius: 50%;
+    /* Switched to ease-out for a more "organic" pulse feel */
+    animation: radar-pulse 6s infinite ease-out; 
+    opacity: 0;
+}
+
+/* --- Staggered Sizes & Ripple Timing --- */
+/* Smallest to Largest */
+.c1 { width: 350px; height: 350px; animation-delay: 0s; }
+.c2 { width: 430px; height: 430px; animation-delay: 1s; border-style: dashed; }
+.c3 { width: 510px; height: 510px; animation-delay: 2s; }
+.c4 { width: 590px; height: 590px; animation-delay: 3s; border-style: dotted; opacity: 0.2; }
+.c5 { width: 670px; height: 670px; animation-delay: 4s; }
+
+/* ==========================================================================
+   SKILLS SECTION & ANIMATED CIRCLES
+   ========================================================================== */
+
+/* 1. Register the custom property (This is the "magic" that allows animation) */
+@property --p {
+    syntax: '<percentage>';
+    inherits: false;
+    initial-value: 0%;
+}
+
+#core-skills {
+    padding: 100px 8%;
+    text-align: center;
+    background: var(--bg-mid);
+}
+
+.skills-grid {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+/* 2. The Base Circle Style */
+.progress-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    /* Uses the animated --p variable */
+    background: conic-gradient(var(--accent-red) var(--p), rgba(255, 255, 255, 0.05) 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    
+    /* Animation settings */
+    animation: fill-progress 2.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* 3. The Inner "Hole" to make it a ring */
+.progress-circle::before {
+    content: "";
+    position: absolute;
+    width: 110px;
+    height: 110px;
+    background: var(--bg-mid);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* 4. The Percentage Text */
+.progress-circle span {
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 1.4rem;
+    font-family: var(--font-heading);
+    color: var(--text-white);
+}
+
+/* 5. Mapping the HTML data-values to the CSS variable */
+[data-value="95"] { --p: 95%; }
+[data-value="90"] { --p: 90%; }
+[data-value="80"] { --p: 80%; }
+[data-value="70"] { --p: 70%; }
+
+/* 6. The Animation Keyframes */
+@keyframes fill-progress {
+    from {
+        --p: 0%;
+    }
+}
+
+.skill-item p {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--text-dim);
+}
+
+/* --- The Animation --- */
+@keyframes radar-pulse {
+    0% {
+        transform: scale(0.85) rotate(0deg);
+        opacity: 0;
+    }
+    25% {
+        opacity: 0.6; /* Peaks visibility early */
+    }
+    100% {
+        transform: scale(1.15) rotate(120deg); /* Slow spin while expanding */
+        opacity: 0; /* Fades out as it hits the edge */
+        border-color: rgba(230, 57, 70, 0);
+    }
+}
+
+/* --- Arsenal Section Container --- */
+#arsenal {
+    width: 100%;
+    padding: 20px 8%;
+    background: var(--bg-mid);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#arsenal h2 {
+    font-family: var(--font-heading);
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+/* --- The Grid --- */
+.tech-grid {
+    display: grid;
+    /* This makes the grid fill the entire width of the mahogany section */
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 40px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.02);
+    padding: 60px 40px;
+    border-radius: 30px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    justify-items: center; /* Centers the icons in each cell */
+}
+
+/* --- Styling the Icons --- */
+.tech-grid i {
+    font-size: 3rem; /* Large and professional */
+    color: var(--accent-red); /* Your signature crimson */
+    filter: drop-shadow(0 0 10px rgba(230, 57, 70, 0.3));
+    
+    /* The Floating Animation */
+    animation: arsenal-float 6s infinite ease-in-out;
+    transition: 0.3s;
+}
+
+/* Stagger the animations so they don't move in sync */
+.tech-grid i:nth-child(odd) { animation-delay: 0.5s; }
+.tech-grid i:nth-child(even) { animation-delay: 1.5s; }
+
+/* Hover Effect */
+.tech-grid i:hover {
+    transform: scale(1.3) translateY(-10px);
+    color: white; /* Glows white on hover */
+    filter: drop-shadow(0 0 20px var(--accent-red));
+}
+
+/* history =====================================================*/
+/* ============================= */
+/* SECTION */
+/* ============================= */
+
+#history{
+    padding:100px 8%;
+    background:var(--bg-dark);
+}
+
+.section-title{
+    text-align:center;
+    font-size:2.8rem;
+    margin-bottom:70px;
+}
+
+.section-title span{
+    color:var(--accent-red);
+}
+
+/* ============================= */
+/* TIMELINE GRID */
+/* ============================= */
+
+.timeline{
+
+    position:relative;
+
+    max-width:1100px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    column-gap:100px;
+}
+
+/* center line */
+
+.timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+    top:0;
+
+    transform:translateX(-50%);
+
+    width:2px;
+    height:100%;
+
+    background:rgba(255,255,255,0.15);
+}
+
+/* ============================= */
+/* COLUMN STACKS */
+/* ============================= */
+
+.timeline-col{
+
+    display:flex;
+    flex-direction:column;
+    gap:30px;
+}
+
+/* alignment */
+
+.timeline-col.left{
+    align-items:flex-end;
+    text-align:right;
+}
+
+.timeline-col.right{
+    align-items:flex-start;
+}
+
+/* ============================= */
+/* GLASS CARDS */
+/* ============================= */
+
+.timeline-card{
+
+    width:100%;
+    max-width:420px;
+
+    padding:20px 24px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,0.05);
+
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+
+    border:1px solid rgba(255,255,255,0.15);
+
+    transition:all 0.35s ease;
+}
+
+/* hover */
+
+.timeline-card:hover{
+
+    transform:translateY(-6px);
+
+    border-color:var(--accent-red);
+
+    background:rgba(255,255,255,0.08);
+
+    box-shadow:0 10px 25px rgba(0,0,0,0.35);
+}
+
+/* ============================= */
+/* LOGOS */
+/* ============================= */
+
+.timeline-card img{
+    height:40px;
+    margin-bottom:12px;
+}
+
+.timeline-col.left img{
+    margin-left:auto;
+}
+
+/* ============================= */
+/* TEXT */
+/* ============================= */
+
+.timeline-card h3{
+    font-size:1rem;
+    margin-bottom:6px;
+    color:var(--text-white);
+}
+
+.timeline-card p{
+    font-size:0.85rem;
+    color:var(--text-dim);
+}
+
+/* ==========================================================================
+   SERVICES SECTION (GLASS CARDS)
+   ========================================================================== */
+.services-section {
+    padding: 100px 8%;
+    background: var(--bg-mid);
+    text-align: center;
+}
+
+.main-title {
+    font-size: 2.5rem;
+    font-family: var(--font-heading);
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+.main-title span { color: var(--accent-red); }
+
+.cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* --- The Glass Card Design --- */
+.glass-card {
+    flex: 1;
+    min-width: 320px;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.03); /* Deep Glass */
+    backdrop-filter: blur(15px);
+    border: 1px solid var(--glass-border);
+    border-radius: 25px;
+    padding: 45px 35px;
+    text-align: left;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Red Accent Line at the top of each card */
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: var(--accent-red);
+    transition: width 0.4s ease;
+}
+
+/* --- Card Content --- */
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--accent-red);
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 10px rgba(230, 57, 70, 0.3));
+}
+
+.glass-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    letter-spacing: 1px;
+}
+
+.glass-card h3 {
+    font-size: 0.9rem;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.glass-card p {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+}
+
+/* --- Hover Effects (3D Lift & Glow) --- */
+.glass-card:hover {
+    transform: translateY(-15px) scale(1.02);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(230, 57, 70, 0.4);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4), 
+                0 0 20px rgba(230, 57, 70, 0.1);
+}
+
+.glass-card:hover::before {
+    width: 60%; /* Accent line expands on hover */
+}
+
+
+/* ==========================================================================
+   ACHIEVEMENTS STYLES
+   ========================================================================== */
+#achievements {
+    padding: 100px 8%;
+    background: linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-dark) 100%);
+    text-align: center;
+}
+
+#achievements h2 {
+    font-family: var(--font-heading);
+    font-size: 3rem;
+    margin-bottom: 60px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+#achievements h2 i { color: var(--accent-red); }
+
+.achievement-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.achievement {
+    flex: 1;
+    min-width: 320px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: left;
+    position: relative;
+    overflow: hidden;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.medal-icon {
+    font-size: 2rem;
+    color: var(--accent-red);
+    margin-bottom: 20px;
+    opacity: 0.8;
+}
+
+/* Metallic Top-Shine Refined */
+.achievement::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(135deg, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0) 50%);
+    pointer-events: none;
+}
+
+.achievement .label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--accent-red);
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.achievement h3 {
+    font-size: 1.1rem;
+    color: var(--text-white);
+    margin: 10px 0;
+}
+
+.achievement .highlight { color: #fff; font-weight: 600; }
+.achievement .issuer, .achievement .year { color: var(--text-dim); font-size: 0.9rem; }
+
+.achievement:hover {
+    transform: translateY(-12px);
+    border-color: rgba(230, 57, 70, 0.4);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+}
+
+/* ==========================================================================
+   MAHOGANY GLASS FOOTER STYLES
+   ========================================================================== */
+.mahogany-footer {
+    position: relative;
+    background: var(--bg-dark);
+    padding: 80px 8% 40px;
+    /* border-top: 1px solid var(--glass-border); */
+    overflow: hidden;
+    border-top: 2px solid var(--accent-red); 
+    box-shadow: 0 -10px 20px rgba(230, 57, 70, 0.05);
+}
+
+.footer-top-glow {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 150px;
+    /* background: radial-gradient(circle, rgba(230, 57, 70, 0.08) 0%, transparent 70%); */
+    pointer-events: none;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 60px;
+}
+
+.footer-logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--text-white);
+    text-decoration: none;
+}
+
+.footer-logo span { color: var(--accent-red); }
+
+.footer-brand p {
+    color: var(--text-dim);
+    margin-top: 15px;
+    max-width: 300px;
+    line-height: 1.6;
+}
+
+.footer-nav h4, .footer-social h4 {
+    color: var(--text-white);
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.footer-nav ul { list-style: none; }
+.footer-nav ul li { margin-bottom: 12px; }
+.footer-nav ul li a {
+    color: var(--text-dim);
+    transition: 0.3s;
+    font-size: 0.95rem;
+}
+
+.footer-nav ul li a:hover { color: var(--accent-red); padding-left: 5px; }
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    font-size: 1.4rem;
+    transition: 0.4s;
+}
+
+.social-icons a:hover {
+    background: var(--accent-red);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(230, 57, 70, 0.3);
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding-top: 30px;
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+    }
+    .footer-brand p { margin: 15px auto; }
+    .social-icons { justify-content: center; }
+}
+
+
+/* --- Floating Keyframes --- */
+@keyframes arsenal-float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+/* Responsive */
+@media (max-width: 992px) {
+    #about-hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 150px;
+    }
+    .profile-frame img { width: 300px; }
+    .intro-text p { margin: 0 auto 40px; }
+}
+
+/* ============================= */
+/* MOBILE */
+/* ============================= */
+
+@media (max-width:768px){
+
+.timeline{
+
+    grid-template-columns:1fr;
+}
+
+.timeline::before{
+    display:none;
+}
+
+.timeline-col.left{
+    align-items:flex-start;
+    text-align:left;
+}
+
+.timeline-card{
+    max-width:100%;
+}
+
+.timeline-col.left img{
+    margin-left:0;
+}
+
+}
+
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .glass-card {
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    #core-skills {
+        padding: 60px 5%;
+    }
+
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 40px 10px; 
+        justify-items: center;
+        margin-top: 30px;
+    }
+
+    .progress-circle {
+        width: 100px; 
+        height: 100px;
+        /* Removed calc() because --p is already registered as a percentage */
+        background: conic-gradient(var(--accent-red) var(--p), rgba(255, 255, 255, 0.05) 0);
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* We MUST resize the desktop ::before hole, otherwise it stays 110px and covers everything */
+    .progress-circle::before {
+        content: "";
+        position: absolute;
+        width: 84px;  /* Sized perfectly for the 100px outer circle */
+        height: 84px;
+        background: var(--bg-mid); 
+        border-radius: 50%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+    }
+
+    /* Disable the ::after if you added it earlier to prevent double-holes */
+    .progress-circle::after {
+        display: none;
+    }
+
+    .progress-circle span {
+        position: relative;
+        z-index: 2;
+        font-size: 1.1rem;
+    }
+
+    .skill-item p {
+        font-size: 0.75rem; /* Matches your 'text-transform: uppercase' style */
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    header nav { flex-direction: column; gap: 20px; }
+}

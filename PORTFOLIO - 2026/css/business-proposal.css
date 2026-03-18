@@ -1,0 +1,220 @@
+/* ==========================================================================
+   BUSINESS PROPOSAL VIEW - HIGH FIDELITY
+   ========================================================================== */
+:root {
+    --ocean-teal: #008080;
+    --sand-gold: #d4af37;
+}
+
+.proposal-view {
+    padding: 140px 8% 80px;
+    background: linear-gradient(180deg, var(--bg-mid) 0%, var(--bg-dark) 100%);
+}
+
+.proposal-hero {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 80px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(0, 128, 128, 0.1);
+    border: 1px solid var(--ocean-teal);
+    color: var(--ocean-teal);
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.proposal-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-family: var(--font-heading);
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+/* Strategic Grid */
+.case-study-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.strategy-card {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    padding: 40px;
+    border-radius: 24px;
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.strategy-card i {
+    font-size: 2.5rem;
+    color: var(--sand-gold);
+    margin-bottom: 20px;
+}
+
+.strategy-card h3 {
+    font-family: var(--font-heading);
+    margin-bottom: 15px;
+    color: var(--text-white);
+}
+
+.strategy-card p {
+    font-size: 0.95rem;
+    color: var(--text-dim);
+    line-height: 1.7;
+}
+
+.strategy-card:hover {
+    border-color: var(--sand-gold);
+    transform: translateY(-10px);
+    background: rgba(212, 175, 55, 0.05);
+}
+
+/* --- THE NEW PDF PREVIEW CARD --- */
+.doc-header {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.doc-header h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.pdf-preview-card {
+    display: grid;
+    grid-template-columns: 320px 1fr; /* Image space | Text space */
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 30px;
+    overflow: hidden;
+    margin-top: 20px;
+    transition: 0.4s ease;
+}
+
+.pdf-image {
+    position: relative;
+    height: 450px;
+}
+
+.pdf-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Keeps your cover photo proportional */
+}
+
+/* Gradient overlay to help text transition */
+.image-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(13, 5, 5, 0.5));
+}
+
+.pdf-details {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.file-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.file-info i {
+    font-size: 3rem;
+    color: var(--accent-red);
+}
+
+.proposal-highlights {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.proposal-highlights li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-dim);
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+.proposal-highlights i {
+    color: var(--ocean-teal);
+    font-size: 1.2rem;
+}
+
+/* Download Button */
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--text-white);
+    color: var(--bg-dark);
+    padding: 16px 40px;
+    border-radius: 50px;
+    font-weight: 700;
+    width: fit-content;
+    transition: 0.3s;
+}
+
+.btn-download:hover {
+    background: var(--accent-red);
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(230, 57, 70, 0.2);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsiveness)
+   ========================================================================== */
+
+@media (max-width: 992px) {
+    .pdf-preview-card {
+        grid-template-columns: 280px 1fr;
+    }
+    .pdf-details { padding: 30px; }
+}
+
+@media (max-width: 768px) {
+    .proposal-view { padding-top: 100px; }
+    
+    .case-study-grid { grid-template-columns: 1fr; }
+
+    /* Stack the PDF Card */
+    .pdf-preview-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .pdf-image {
+        height: 300px;
+    }
+
+    .pdf-details {
+        padding: 40px 25px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .file-info { flex-direction: column; text-align: center; }
+    .proposal-highlights { text-align: left; }
+}
+
+@media (max-width: 480px) {
+    .proposal-hero h1 { font-size: 2rem; }
+    .pdf-image { height: 220px; }
+    .btn-download { width: 100%; }
+}

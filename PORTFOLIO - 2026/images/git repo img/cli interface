@@ -1,0 +1,1019 @@
+<!doctype html>  
+
+<!--[if IEMobile 7 ]> <html lang="en-US"class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7 ]> <html lang="en-US" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en-US" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en-US" class="no-js ie8"> <![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html lang="en-US" class="no-js"><!--<![endif]-->
+	
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		
+		<title>What Is Command Line Interface (CLI)? Command Line for Beginners - Learn to Code With Me</title>	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  		<link rel="pingback" href="https://learntocodewith.me/xmlrpc.php">
+  		
+		<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
+
+		<meta name='ir-site-verification-token' value='-329091599' />
+		<!-- wordpress head functions -->
+		<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO plugin v26.8 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<meta name="description" content="If you want to be a programmer, you need to learn command line skills. So, what is the command line interface? What does it look like? And how do you learn it?" />
+	<link rel="canonical" href="https://learntocodewith.me/learn/command-line/" />
+	<meta property="og:locale" content="en_US" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="What Is Command Line Interface (CLI)? Command Line for Beginners - Learn to Code With Me" />
+	<meta property="og:description" content="If you want to be a programmer, you need to learn command line skills. So, what is the command line interface? What does it look like? And how do you learn it?" />
+	<meta property="og:url" content="https://learntocodewith.me/learn/command-line/" />
+	<meta property="og:site_name" content="Learn to Code With Me" />
+	<meta property="article:publisher" content="https://www.facebook.com/learntocodewithme" />
+	<meta property="article:published_time" content="2021-10-28T14:13:24+00:00" />
+	<meta property="article:modified_time" content="2024-06-22T09:21:42+00:00" />
+	<meta property="og:image" content="https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners.png" />
+	<meta property="og:image:width" content="1680" />
+	<meta property="og:image:height" content="880" />
+	<meta property="og:image:type" content="image/png" />
+	<meta name="author" content="Laurence Bradford" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@learncodewithme" />
+	<meta name="twitter:site" content="@learncodewithme" />
+	<meta name="twitter:label1" content="Written by" />
+	<meta name="twitter:data1" content="Laurence Bradford" />
+	<meta name="twitter:label2" content="Est. reading time" />
+	<meta name="twitter:data2" content="1 minute" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://learntocodewith.me/learn/command-line/#article","isPartOf":{"@id":"https://learntocodewith.me/learn/command-line/"},"author":{"name":"Laurence Bradford","@id":"https://learntocodewith.me/#/schema/person/1a80ed3ea372562475b844e196c47bdc"},"headline":"What Is Command Line Interface (CLI)? Command Line for Beginners","datePublished":"2021-10-28T14:13:24+00:00","dateModified":"2024-06-22T09:21:42+00:00","mainEntityOfPage":{"@id":"https://learntocodewith.me/learn/command-line/"},"wordCount":2239,"publisher":{"@id":"https://learntocodewith.me/#organization"},"image":{"@id":"https://learntocodewith.me/learn/command-line/#primaryimage"},"thumbnailUrl":"https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners.png","articleSection":["Skill","What to learn"],"inLanguage":"en-US"},{"@type":"WebPage","@id":"https://learntocodewith.me/learn/command-line/","url":"https://learntocodewith.me/learn/command-line/","name":"What Is Command Line Interface (CLI)? Command Line for Beginners - Learn to Code With Me","isPartOf":{"@id":"https://learntocodewith.me/#website"},"primaryImageOfPage":{"@id":"https://learntocodewith.me/learn/command-line/#primaryimage"},"image":{"@id":"https://learntocodewith.me/learn/command-line/#primaryimage"},"thumbnailUrl":"https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners.png","datePublished":"2021-10-28T14:13:24+00:00","dateModified":"2024-06-22T09:21:42+00:00","description":"If you want to be a programmer, you need to learn command line skills. So, what is the command line interface? What does it look like? And how do you learn it?","breadcrumb":{"@id":"https://learntocodewith.me/learn/command-line/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://learntocodewith.me/learn/command-line/"]}]},{"@type":"ImageObject","inLanguage":"en-US","@id":"https://learntocodewith.me/learn/command-line/#primaryimage","url":"https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners.png","contentUrl":"https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners.png","width":1680,"height":880,"caption":"The Command Line for Beginners"},{"@type":"BreadcrumbList","@id":"https://learntocodewith.me/learn/command-line/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"LTCWM","item":"https://learntocodewith.me/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://learntocodewith.me/blog/"},{"@type":"ListItem","position":3,"name":"What to learn","item":"https://learntocodewith.me/./learn/"},{"@type":"ListItem","position":4,"name":"Skill","item":"https://learntocodewith.me/./learn/skill/"},{"@type":"ListItem","position":5,"name":"What Is Command Line Interface (CLI)? Command Line for Beginners"}]},{"@type":"WebSite","@id":"https://learntocodewith.me/#website","url":"https://learntocodewith.me/","name":"Learn to Code With Me","description":"Get Digital Skills, Be Happy","publisher":{"@id":"https://learntocodewith.me/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://learntocodewith.me/?s={search_term_string}"},"query-input":{"@type":"PropertyValueSpecification","valueRequired":true,"valueName":"search_term_string"}}],"inLanguage":"en-US"},{"@type":"Organization","@id":"https://learntocodewith.me/#organization","name":"Learn to Code With Me","url":"https://learntocodewith.me/","logo":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://learntocodewith.me/#/schema/logo/image/","url":"https://learntocodewith.me/wp-content/uploads/2018/05/LTCWM_FinalLogo.png","contentUrl":"https://learntocodewith.me/wp-content/uploads/2018/05/LTCWM_FinalLogo.png","width":"475","height":"310","caption":"Learn to Code With Me"},"image":{"@id":"https://learntocodewith.me/#/schema/logo/image/"},"sameAs":["https://www.facebook.com/learntocodewithme","https://x.com/learncodewithme","https://instagram.com/laurencebradford/","https://www.linkedin.com/in/laurencebradford","https://www.pinterest.com/laurencecodes/"]},{"@type":"Person","@id":"https://learntocodewith.me/#/schema/person/1a80ed3ea372562475b844e196c47bdc","name":"Laurence Bradford","image":{"@type":"ImageObject","inLanguage":"en-US","@id":"https://learntocodewith.me/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/782553556c9589cd367b5e65aa37b5ed064e2996b7364ba682f33c6dcc45d7f7?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/782553556c9589cd367b5e65aa37b5ed064e2996b7364ba682f33c6dcc45d7f7?s=96&d=mm&r=g","caption":"Laurence Bradford"},"sameAs":["https://learntocodewith.me/","https://x.com/learncodewithme"],"url":"https://learntocodewith.me/author/laurencebradford3gmail-com/"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel='dns-prefetch' href='//learn-to-code-with-me.kit.com' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel='dns-prefetch' href='//maxcdn.bootstrapcdn.com' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://learntocodewith.me/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flearntocodewith.me%2Flearn%2Fcommand-line%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://learntocodewith.me/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flearntocodewith.me%2Flearn%2Fcommand-line%2F&#038;format=xml" />
+<style id='wp-img-auto-sizes-contain-inline-css' type='text/css'>
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id='wp-block-library-inline-css' type='text/css'>
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=wp-block-library-inline-css */
+</style>
+<style id='wp-block-heading-inline-css' type='text/css'>
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=https://learntocodewith.me/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id='wp-block-image-inline-css' type='text/css'>
+.wp-block-image>a,.wp-block-image>figure>a{display:inline-block}.wp-block-image img{box-sizing:border-box;height:auto;max-width:100%;vertical-align:bottom}@media not (prefers-reduced-motion){.wp-block-image img.hide{visibility:hidden}.wp-block-image img.show{animation:show-content-image .4s}}.wp-block-image[style*=border-radius] img,.wp-block-image[style*=border-radius]>a{border-radius:inherit}.wp-block-image.has-custom-border img{box-sizing:border-box}.wp-block-image.aligncenter{text-align:center}.wp-block-image.alignfull>a,.wp-block-image.alignwide>a{width:100%}.wp-block-image.alignfull img,.wp-block-image.alignwide img{height:auto;width:100%}.wp-block-image .aligncenter,.wp-block-image .alignleft,.wp-block-image .alignright,.wp-block-image.aligncenter,.wp-block-image.alignleft,.wp-block-image.alignright{display:table}.wp-block-image .aligncenter>figcaption,.wp-block-image .alignleft>figcaption,.wp-block-image .alignright>figcaption,.wp-block-image.aligncenter>figcaption,.wp-block-image.alignleft>figcaption,.wp-block-image.alignright>figcaption{caption-side:bottom;display:table-caption}.wp-block-image .alignleft{float:left;margin:.5em 1em .5em 0}.wp-block-image .alignright{float:right;margin:.5em 0 .5em 1em}.wp-block-image .aligncenter{margin-left:auto;margin-right:auto}.wp-block-image :where(figcaption){margin-bottom:1em;margin-top:.5em}.wp-block-image.is-style-circle-mask img{border-radius:9999px}@supports ((-webkit-mask-image:none) or (mask-image:none)) or (-webkit-mask-image:none){.wp-block-image.is-style-circle-mask img{border-radius:0;-webkit-mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-image:url('data:image/svg+xml;utf8,<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50"/></svg>');mask-mode:alpha;-webkit-mask-position:center;mask-position:center;-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-size:contain;mask-size:contain}}:root :where(.wp-block-image.is-style-rounded img,.wp-block-image .is-style-rounded img){border-radius:9999px}.wp-block-image figure{margin:0}.wp-lightbox-container{display:flex;flex-direction:column;position:relative}.wp-lightbox-container img{cursor:zoom-in}.wp-lightbox-container img:hover+button{opacity:1}.wp-lightbox-container button{align-items:center;backdrop-filter:blur(16px) saturate(180%);background-color:#5a5a5a40;border:none;border-radius:4px;cursor:zoom-in;display:flex;height:20px;justify-content:center;opacity:0;padding:0;position:absolute;right:16px;text-align:center;top:16px;width:20px;z-index:100}@media not (prefers-reduced-motion){.wp-lightbox-container button{transition:opacity .2s ease}}.wp-lightbox-container button:focus-visible{outline:3px auto #5a5a5a40;outline:3px auto -webkit-focus-ring-color;outline-offset:3px}.wp-lightbox-container button:hover{cursor:pointer;opacity:1}.wp-lightbox-container button:focus{opacity:1}.wp-lightbox-container button:focus,.wp-lightbox-container button:hover,.wp-lightbox-container button:not(:hover):not(:active):not(.has-background){background-color:#5a5a5a40;border:none}.wp-lightbox-overlay{box-sizing:border-box;cursor:zoom-out;height:100vh;left:0;overflow:hidden;position:fixed;top:0;visibility:hidden;width:100%;z-index:100000}.wp-lightbox-overlay .close-button{align-items:center;cursor:pointer;display:flex;justify-content:center;min-height:40px;min-width:40px;padding:0;position:absolute;right:calc(env(safe-area-inset-right) + 16px);top:calc(env(safe-area-inset-top) + 16px);z-index:5000000}.wp-lightbox-overlay .close-button:focus,.wp-lightbox-overlay .close-button:hover,.wp-lightbox-overlay .close-button:not(:hover):not(:active):not(.has-background){background:none;border:none}.wp-lightbox-overlay .lightbox-image-container{height:var(--wp--lightbox-container-height);left:50%;overflow:hidden;position:absolute;top:50%;transform:translate(-50%,-50%);transform-origin:top left;width:var(--wp--lightbox-container-width);z-index:9999999999}.wp-lightbox-overlay .wp-block-image{align-items:center;box-sizing:border-box;display:flex;height:100%;justify-content:center;margin:0;position:relative;transform-origin:0 0;width:100%;z-index:3000000}.wp-lightbox-overlay .wp-block-image img{height:var(--wp--lightbox-image-height);min-height:var(--wp--lightbox-image-height);min-width:var(--wp--lightbox-image-width);width:var(--wp--lightbox-image-width)}.wp-lightbox-overlay .wp-block-image figcaption{display:none}.wp-lightbox-overlay button{background:none;border:none}.wp-lightbox-overlay .scrim{background-color:#fff;height:100%;opacity:.9;position:absolute;width:100%;z-index:2000000}.wp-lightbox-overlay.active{visibility:visible}@media not (prefers-reduced-motion){.wp-lightbox-overlay.active{animation:turn-on-visibility .25s both}.wp-lightbox-overlay.active img{animation:turn-on-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active){animation:turn-off-visibility .35s both}.wp-lightbox-overlay.show-closing-animation:not(.active) img{animation:turn-off-visibility .25s both}.wp-lightbox-overlay.zoom.active{animation:none;opacity:1;visibility:visible}.wp-lightbox-overlay.zoom.active .lightbox-image-container{animation:lightbox-zoom-in .4s}.wp-lightbox-overlay.zoom.active .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.active .scrim{animation:turn-on-visibility .4s forwards}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active){animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container{animation:lightbox-zoom-out .4s}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .lightbox-image-container img{animation:none}.wp-lightbox-overlay.zoom.show-closing-animation:not(.active) .scrim{animation:turn-off-visibility .4s forwards}}@keyframes show-content-image{0%{visibility:hidden}99%{visibility:hidden}to{visibility:visible}}@keyframes turn-on-visibility{0%{opacity:0}to{opacity:1}}@keyframes turn-off-visibility{0%{opacity:1;visibility:visible}99%{opacity:0;visibility:visible}to{opacity:0;visibility:hidden}}@keyframes lightbox-zoom-in{0%{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale))}to{transform:translate(-50%,-50%) scale(1)}}@keyframes lightbox-zoom-out{0%{transform:translate(-50%,-50%) scale(1);visibility:visible}99%{visibility:visible}to{transform:translate(calc((-100vw + var(--wp--lightbox-scrollbar-width))/2 + var(--wp--lightbox-initial-left-position)),calc(-50vh + var(--wp--lightbox-initial-top-position))) scale(var(--wp--lightbox-scale));visibility:hidden}}
+/*# sourceURL=https://learntocodewith.me/wp-includes/blocks/image/style.min.css */
+</style>
+<style id='wp-block-list-inline-css' type='text/css'>
+ol,ul{box-sizing:border-box}:root :where(.wp-block-list.has-background){padding:1.25em 2.375em}
+/*# sourceURL=https://learntocodewith.me/wp-includes/blocks/list/style.min.css */
+</style>
+<style id='wp-block-paragraph-inline-css' type='text/css'>
+.is-small-text{font-size:.875em}.is-regular-text{font-size:1em}.is-large-text{font-size:2.25em}.is-larger-text{font-size:3em}.has-drop-cap:not(:focus):first-letter{float:left;font-size:8.4em;font-style:normal;font-weight:100;line-height:.68;margin:.05em .1em 0 0;text-transform:uppercase}body.rtl .has-drop-cap:not(:focus):first-letter{float:none;margin-left:.1em}p.has-drop-cap.has-background{overflow:hidden}:root :where(p.has-background){padding:1.25em 2.375em}:where(p.has-text-color:not(.has-link-color)) a{color:inherit}p.has-text-align-left[style*="writing-mode:vertical-lr"],p.has-text-align-right[style*="writing-mode:vertical-rl"]{rotate:180deg}
+/*# sourceURL=https://learntocodewith.me/wp-includes/blocks/paragraph/style.min.css */
+</style>
+<style id='wp-block-quote-inline-css' type='text/css'>
+.wp-block-quote{box-sizing:border-box;overflow-wrap:break-word}.wp-block-quote.is-large:where(:not(.is-style-plain)),.wp-block-quote.is-style-large:where(:not(.is-style-plain)){margin-bottom:1em;padding:0 1em}.wp-block-quote.is-large:where(:not(.is-style-plain)) p,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) p{font-size:1.5em;font-style:italic;line-height:1.6}.wp-block-quote.is-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-large:where(:not(.is-style-plain)) footer,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) cite,.wp-block-quote.is-style-large:where(:not(.is-style-plain)) footer{font-size:1.125em;text-align:right}.wp-block-quote>cite{display:block}
+/*# sourceURL=https://learntocodewith.me/wp-includes/blocks/quote/style.min.css */
+</style>
+
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+<link rel='stylesheet' id='convertkit-broadcasts-css' href='https://learntocodewith.me/wp-content/plugins/convertkit/resources/frontend/css/broadcasts.css?ver=3.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='convertkit-button-css' href='https://learntocodewith.me/wp-content/plugins/convertkit/resources/frontend/css/button.css?ver=3.1.5' type='text/css' media='all' />
+<style id='wp-block-button-inline-css' type='text/css'>
+.wp-block-button__link{align-content:center;box-sizing:border-box;cursor:pointer;display:inline-block;height:100%;text-align:center;word-break:break-word}.wp-block-button__link.aligncenter{text-align:center}.wp-block-button__link.alignright{text-align:right}:where(.wp-block-button__link){border-radius:9999px;box-shadow:none;padding:calc(.667em + 2px) calc(1.333em + 2px);text-decoration:none}.wp-block-button[style*=text-decoration] .wp-block-button__link{text-decoration:inherit}.wp-block-buttons>.wp-block-button.has-custom-width{max-width:none}.wp-block-buttons>.wp-block-button.has-custom-width .wp-block-button__link{width:100%}.wp-block-buttons>.wp-block-button.has-custom-font-size .wp-block-button__link{font-size:inherit}.wp-block-buttons>.wp-block-button.wp-block-button__width-25{width:calc(25% - var(--wp--style--block-gap, .5em)*.75)}.wp-block-buttons>.wp-block-button.wp-block-button__width-50{width:calc(50% - var(--wp--style--block-gap, .5em)*.5)}.wp-block-buttons>.wp-block-button.wp-block-button__width-75{width:calc(75% - var(--wp--style--block-gap, .5em)*.25)}.wp-block-buttons>.wp-block-button.wp-block-button__width-100{flex-basis:100%;width:100%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-25{width:25%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-50{width:50%}.wp-block-buttons.is-vertical>.wp-block-button.wp-block-button__width-75{width:75%}.wp-block-button.is-style-squared,.wp-block-button__link.wp-block-button.is-style-squared{border-radius:0}.wp-block-button.no-border-radius,.wp-block-button__link.no-border-radius{border-radius:0!important}:root :where(.wp-block-button .wp-block-button__link.is-style-outline),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link){border:2px solid;padding:.667em 1.333em}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-text-color)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-text-color)){color:currentColor}:root :where(.wp-block-button .wp-block-button__link.is-style-outline:not(.has-background)),:root :where(.wp-block-button.is-style-outline>.wp-block-button__link:not(.has-background)){background-color:initial;background-image:none}
+/*# sourceURL=https://learntocodewith.me/wp-includes/blocks/button/style.min.css */
+</style>
+<link rel='stylesheet' id='convertkit-form-css' href='https://learntocodewith.me/wp-content/plugins/convertkit/resources/frontend/css/form.css?ver=3.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='convertkit-form-builder-field-css' href='https://learntocodewith.me/wp-content/plugins/convertkit/resources/frontend/css/form-builder.css?ver=3.1.5' type='text/css' media='all' />
+<link rel='stylesheet' id='convertkit-form-builder-css' href='https://learntocodewith.me/wp-content/plugins/convertkit/resources/frontend/css/form-builder.css?ver=3.1.5' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='tm_clicktotweet-css' href='https://learntocodewith.me/wp-content/plugins/click-to-tweet-by-todaymade/assets/css/styles.css?ver=6.9.4' type='text/css' media='all' />
+<link rel='stylesheet' id='tap-disclosure-notice-css' href='https://learntocodewith.me/wp-content/plugins/thirstyaffiliates-pro/js/app/disclosure-notice/dist/disclosure-notice.css?ver=1.7.8' type='text/css' media='all' />
+<link rel='stylesheet' id='nsc_bar_nice-cookie-consent-css' href='https://learntocodewith.me/wp-content/plugins/beautiful-and-responsive-cookie-consent/public/cookieNSCconsent.min.css?ver=4.9.2' type='text/css' media='all' />
+<style id='nsc_bar_nice-cookie-consent-inline-css' type='text/css'>
+.cc-window { font-family: 'Open Sans', sans-serif}
+/*# sourceURL=nsc_bar_nice-cookie-consent-inline-css */
+</style>
+<link rel='stylesheet' id='main-css' href='https://learntocodewith.me/wp-content/themes/remixx/assets/css/screen.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wpbs-style-css' href='https://learntocodewith.me/wp-content/themes/remixx/style.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='bootstrap-font-awesome-css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css?ver=4.1.0' type='text/css' media='all' />
+<script type="text/javascript" src="https://learntocodewith.me/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://learntocodewith.me/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+
+<!-- Google tag (gtag.js) snippet added by Site Kit -->
+<!-- Google Analytics snippet added by Site Kit -->
+<script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=GT-M34SMFG" id="google_gtagjs-js" async></script>
+<script type="text/javascript" id="google_gtagjs-js-after">
+/* <![CDATA[ */
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("set","linker",{"domains":["learntocodewith.me"]});
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "GT-M34SMFG");
+//# sourceURL=google_gtagjs-js-after
+/* ]]> */
+</script>
+<link rel="https://api.w.org/" href="https://learntocodewith.me/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://learntocodewith.me/wp-json/wp/v2/posts/21663" /><link rel='shortlink' href='https://learntocodewith.me/?p=21663' />
+<meta name="generator" content="Site Kit by Google 1.170.0" />		<style type="text/css" id="wp-custom-css">
+			
+
+
+
+		</style>
+				<!-- end of wordpress head -->
+		<!-- IE8 fallback moved below head to work properly. Added respond as well. Tested to work. -->
+			<!-- media-queries.js (fallback) -->
+		<!--[if lt IE 9]>
+			<script src="https://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>			
+		<![endif]-->
+
+		<!-- html5.js -->
+		<!--[if lt IE 9]>
+			<script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->	
+		
+			<!-- respond.js -->
+		<!--[if lt IE 9]>
+		          <script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+		<![endif]-->	
+		<!-- analytics -->
+		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-42087016-3', 'auto');
+			  ga('send', 'pageview');
+
+		</script>
+	</head>
+	
+	<body data-rsssl=1 class="wp-singular post-template-default single single-post postid-21663 single-format-standard wp-embed-responsive wp-theme-remixx">
+		<header id="content-header" class="site-menu headroom">
+			<div style="display: none;">
+				< !-- Digital window verification 001 -->
+			</div>
+			<div class="container-fluid">
+				<div class="clearfix row">
+					<div class="col-sm-12 site-menu_container">
+						<input type="checkbox" id="toggle">
+						
+						<a title="Get Digital Skills, Be Happy" href="https://learntocodewith.me" class="logo">		    	
+							<img width="95" height="62" src="https://learntocodewith.me/wp-content/themes/remixx/images/logo.svg" alt="learntocodewith.me">
+						</a>
+						
+						<nav id="main-menu" class="site-menu_nav">
+							
+							<ul id="menu-navigation-dropdowns" class="menu list-inline navbar"><li id="menu-item-21126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-21126"><a href="https://learntocodewith.me/about/">About</a></li>
+<li id="menu-item-21127" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-21127"><a href="https://learntocodewith.me/blog/">Blog</a></li>
+<li id="menu-item-21128" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-21128"><a href="https://learntocodewith.me/podcast/">Podcast</a></li>
+<li id="menu-item-21129" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-21129"><a>What to learn</a>
+<ul class="sub-menu">
+	<li id="menu-item-21132" class="level2-title menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-21132"><a href="https://learntocodewith.me/./learn/skill/">Skills</a></li>
+	<li id="menu-item-21134" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21134"><a href="https://learntocodewith.me/learn/html/">HTML</a></li>
+	<li id="menu-item-21133" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21133"><a href="https://learntocodewith.me/learn/css/">CSS</a></li>
+	<li id="menu-item-21135" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21135"><a href="https://learntocodewith.me/learn/javascript/">JavaScript</a></li>
+	<li id="menu-item-21136" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21136"><a href="https://learntocodewith.me/resources/why-learn-python/">Python</a></li>
+	<li id="menu-item-21137" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21137"><a href="https://learntocodewith.me/posts/java-for-beginners/">Java</a></li>
+	<li id="menu-item-21138" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21138"><a href="https://learntocodewith.me/posts/sql-guide/">SQL</a></li>
+	<li id="menu-item-21139" class="level2-title menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21139"><a href="https://learntocodewith.me/./learn/subject/">Topics</a></li>
+	<li id="menu-item-21140" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21140"><a href="https://learntocodewith.me/posts/become-a-software-engineer/">Software engineering</a></li>
+	<li id="menu-item-21141" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21141"><a href="https://learntocodewith.me/work-in-tech/front-end-developer/">Frontend development</a></li>
+	<li id="menu-item-21142" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21142"><a href="https://learntocodewith.me/posts/backend-development/">Backend development</a></li>
+	<li id="menu-item-21143" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21143"><a href="https://learntocodewith.me/reviews/mobile-app-courses/">Mobile development</a></li>
+	<li id="menu-item-21144" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21144"><a href="https://learntocodewith.me/posts/data-analysis/">Data analysis</a></li>
+	<li id="menu-item-21145" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21145"><a href="https://learntocodewith.me/posts/cybersecurity/">Cybersecurity</a></li>
+</ul>
+</li>
+<li id="menu-item-21130" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-21130"><a>Where to learn</a>
+<ul class="sub-menu">
+	<li id="menu-item-21146" class="level2-title menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21146"><a href="https://learntocodewith.me/./reviews/platform/">Platform reviews</a></li>
+	<li id="menu-item-21148" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21148"><a href="https://learntocodewith.me/reviews/codecademy/">Codecademy</a></li>
+	<li id="menu-item-21150" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21150"><a href="https://learntocodewith.me/reviews/udacity/">Udacity</a></li>
+	<li id="menu-item-21151" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21151"><a href="https://learntocodewith.me/reviews/coursera/">Coursera</a></li>
+	<li id="menu-item-21149" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21149"><a href="https://learntocodewith.me/reviews/udemy/">Udemy</a></li>
+	<li id="menu-item-21152" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21152"><a href="https://learntocodewith.me/reviews/team-treehouse/">Team Treehouse</a></li>
+	<li id="menu-item-21147" class="level2-title menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21147"><a href="https://learntocodewith.me/./reviews/best/">Best of</a></li>
+	<li id="menu-item-21153" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21153"><a href="https://learntocodewith.me/posts/code-for-free/">Free places to learn</a></li>
+	<li id="menu-item-21154" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21154"><a href="https://learntocodewith.me/posts/programming-books/">Programming books</a></li>
+	<li id="menu-item-21155" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21155"><a href="https://learntocodewith.me/reviews/best-web-development-courses/">Web dev courses</a></li>
+	<li id="menu-item-21156" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21156"><a href="https://learntocodewith.me/reviews/web-design-courses/">Web design courses</a></li>
+	<li id="menu-item-21157" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21157"><a href="https://learntocodewith.me/reviews/mobile-app-courses/">Mobile dev courses</a></li>
+</ul>
+</li>
+<li id="menu-item-21131" class="dropdown menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-21131"><a>Work in tech</a>
+<ul class="sub-menu">
+	<li id="menu-item-21159" class="level2-title menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21159"><a href="https://learntocodewith.me/./work-in-tech/job-hunting/">Job hunting</a></li>
+	<li id="menu-item-21160" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21160"><a href="https://learntocodewith.me/work-in-tech/high-paying-tech-jobs/">High-paying jobs</a></li>
+	<li id="menu-item-21161" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21161"><a href="https://learntocodewith.me/posts/job-referral/">Referrals</a></li>
+	<li id="menu-item-21162" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21162"><a href="https://learntocodewith.me/posts/online-presence/">Online presence</a></li>
+	<li id="menu-item-21163" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21163"><a href="https://learntocodewith.me/posts/reasons-to-use-linkedin/">LinkedIn</a></li>
+	<li id="menu-item-21164" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21164"><a href="https://learntocodewith.me/posts/tech-resumes/">Resume</a></li>
+	<li id="menu-item-21165" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21165"><a href="https://learntocodewith.me/posts/portfolio-tips/">Portfolio</a></li>
+	<li id="menu-item-21166" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21166"><a href="https://learntocodewith.me/posts/technical-interview/">Interviewing</a></li>
+	<li id="menu-item-21158" class="level2-title menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21158"><a href="https://learntocodewith.me/./work-in-tech/freelancing/">Freelancing</a></li>
+	<li id="menu-item-21167" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21167"><a href="https://learntocodewith.me/posts/technical-side-gig/">Side gigs</a></li>
+	<li id="menu-item-21168" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21168"><a href="https://learntocodewith.me/posts/make-money-coding/">Earn as you learn</a></li>
+	<li id="menu-item-21169" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21169"><a href="https://learntocodewith.me/posts/first-freelance-coding-client/">Finding clients</a></li>
+	<li id="menu-item-21170" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21170"><a href="https://learntocodewith.me/posts/website-design-pricing/">Pricing/rates</a></li>
+	<li id="menu-item-21171" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-21171"><a href="https://learntocodewith.me/posts/freelance-proposals/">Proposals</a></li>
+</ul>
+</li>
+</ul>
+						</nav>
+						<label for="toggle" class="menu-toggle">
+   							<!-- <i class="fa fa-bars"></i> -->
+							<span class="first"></span>
+							<span class="second"></span>
+							<span class="third"></span>
+						
+						</label>
+						
+						<!-- SEARCH -->
+						<ul class="searchNav navbar">
+							<li class="searchIcon"><i class="fa fa-search"></i></li>
+						</ul>
+						
+								
+					</div> <!-- end .col -->
+				</div> <!-- end .row -->		
+			</div> <!-- close  container -->
+			
+		</header> <!-- end #content-header -->
+		<div class="navbarSearchForm hidden"> <!-- {hidden} -->
+			<form action="https://learntocodewith.me/" method="get" class="">
+	<input type="text" name="s" id="search" placeholder="Search..." value="" class="searchInputField" />
+	<button type="submit" class="btn btn-search-no-text inactive"><i class="fa fa-search"></i></button>
+    <!-- <fieldset>
+		<div class="search-form clearfix">
+			
+			<button type="submit" class="btn btn-danger btn-search"><i class="fa fa-search"></i></button>
+		</div>
+    </fieldset> -->
+</form>		</div>
+
+					 
+		
+	
+		
+<div class="container-fluid">
+
+		<div class="wrap-basic">
+			
+	<p id="breadcrumbs"><span><span><a href="https://learntocodewith.me/">LTCWM</a></span> &gt; <span><a href="https://learntocodewith.me/blog/">Blog</a></span> &gt; <span><a href="https://learntocodewith.me/./learn/">What to learn</a></span> &gt; <span><a href="https://learntocodewith.me/./learn/skill/">Skill</a></span> &gt; <span class="breadcrumb_last" aria-current="page">What Is Command Line Interface (CLI)? Command Line for Beginners</span></span></p>			<div class="single-post clearfix row" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
+									<div class="featured" itemprop="image">
+						<img width="1680" height="880" src="https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners-1680x880.png" class="attachment-wpbs-featured size-wpbs-featured wp-post-image" alt="The Command Line for Beginners" decoding="async" fetchpriority="high" srcset="https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners.png 1680w, https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners-300x157.png 300w, https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners-1024x536.png 1024w, https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners-768x402.png 768w, https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners-1536x805.png 1536w, https://learntocodewith.me/wp-content/uploads/2021/10/Command-Line-for-Beginners-600x313.png 600w" sizes="(max-width: 1680px) 100vw, 1680px" />					</div>
+				
+				<div class="col-sm-10 col-sm-offset-1">
+					<header class="skinny-header">
+						<h1 class="post-title" itemprop="headline">What Is Command Line Interface (CLI)? Command Line for Beginners</h1>
+						<p class="meta">
+							Updated on <time datetime="2021-10-28" pubdate>October 28th, 2021</time>
+							| Sign up for <a href="https://learntocodewith.me/newsletter/" aria-label="newsletter">learn to code tips</a>
+						</p>
+						
+												
+						<hr class="small-hr">
+					</header> <!-- end article header -->
+
+					<div class="article" id="top">
+						
+
+								<article id="post-21663" class="clearfix post-21663 post type-post status-publish format-standard has-post-thumbnail hentry category-skill category-learn" role="article" itemprop="text">
+
+									<section class="post-content clearfix">
+										
+<p class="lead">What is a CLI, aka command line interface? In short, the command line interface is a way&nbsp;of interacting with your computer. And if you ever want to be a serious programmer, or even half-serious, you need to learn command line skills.</p>
+
+
+
+<p>Admittedly, the&nbsp;CLI looks intimidating&nbsp;to a lot of first-timers. (It was for me.)&nbsp;<em>But it&#8217;s not that</em> <em><em>hard to learn command line basics</em>.</em></p>
+
+
+
+<p>In this article, my friend Michael Gattozzi is joining us to help explain some key command line concepts! Let’s dive into more details on the command line for beginners and how to use command line programming to interact with your computer.</p>
+
+
+
+<p id="toc"><strong>Table of Contents</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li><a href="#what-is-command">What Is Command Line Interface/CLI?</a>&nbsp;</li>
+
+
+
+<li><a href="#Shell-vs-Bash">Shell vs. Bash vs. Terminal vs. Command Prompt</a></li>
+
+
+
+<li><a href="#difference-cli-gui">What is the Difference Between the CLI and GUI?</a></li>
+
+
+
+<li><a href="#why-learn-cli">Why Should I Learn the Command Line?</a></li>
+
+
+
+<li><a href="#what-cli-looks-like">What Does the Command Line Look Like?</a></li>
+
+
+
+<li><a href="#how-cli">How to Learn Command Line Skills</a></li>
+</ul>
+
+
+<p><span class="callout">Disclosure: I’m a proud affiliate for some of the resources mentioned in this article. If you buy a product through my links on this page, I may get a small commission for referring you. Thanks!</span></p>
+
+
+
+<h2 class="wp-block-heading" id="what-is-command"><strong>What Is Command Line Interface/CLI?</strong></h2>
+
+
+
+<p>💡 The command line, or command-line interface (CLI), is a text-based interface that allows you to type commands via lines of text that are then processed by the computer.</p>
+
+
+
+<figure class="wp-block-image size-large"><img decoding="async" width="1024" height="768" src="https://learntocodewith.me/wp-content/uploads/2021/10/command-line-1024x768.jpg" alt="command line screen" class="wp-image-21688" srcset="https://learntocodewith.me/wp-content/uploads/2021/10/command-line-1024x768.jpg 1024w, https://learntocodewith.me/wp-content/uploads/2021/10/command-line-300x225.jpg 300w, https://learntocodewith.me/wp-content/uploads/2021/10/command-line-768x576.jpg 768w, https://learntocodewith.me/wp-content/uploads/2021/10/command-line-1536x1152.jpg 1536w, https://learntocodewith.me/wp-content/uploads/2021/10/command-line.jpg 1540w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>For example, you can learn how to use command line skills to quickly rename hundreds of files in a folder, completely erase a drive, navigate through files and folders, or pull up a list of every program installed on your computer — without ever using your mouse!</p>
+
+
+
+<p>Depending on whether you use Windows or Mac/Linux, there will be differences in the CLI.</p>
+
+
+
+<p>As Michael notes, &#8220;most distributions of Linux and Mac run bash as their choice of shell for the terminal.&#8221; Nonetheless, all of the commands are standard across Unix machines.</p>
+
+
+
+<p>While Windows does have a command line interface, unless you work in IT or are doing <a href="https://learntocodewith.me/learn/penetration-testing/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">Penetration Testing</a>, Michael wouldn’t recommend learning it as a prerequisite. The Windows commands and how its CLI works are different from the Linux and Mac CLI.</p>
+
+
+<div class='tm-tweet-clear'></div>
+<div class='tm-click-to-tweet'>
+<div class='tm-ctt-text'><a href="https://twitter.com/share?text=Learn+what+the+command+line+is%2C+what+it%E2%80%99s+used+for%2C+and+how+to+learn+it+in+this+post%21&#038;via=learncodewithme&#038;related=learncodewithme&#038;url=https://learntocodewith.me/learn/command-line/" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">Learn what the command line is, what it’s used for, and how to learn it in this post!</a></div>
+<p><a href="https://twitter.com/share?text=Learn+what+the+command+line+is%2C+what+it%E2%80%99s+used+for%2C+and+how+to+learn+it+in+this+post%21&#038;via=learncodewithme&#038;related=learncodewithme&#038;url=https://learntocodewith.me/learn/command-line/" target="_blank" class="tm-ctt-btn" data-wpel-link="external" rel="nofollow external noopener noreferrer">Click To Tweet</a></p>
+<div class='tm-ctt-tip'></div>
+</div>
+
+
+
+<p class="toc-top-link"><meta charset="utf-8">☝️ <a href="#toc" data-type="internal" data-id="#toc">Back to the table of contents</a></p>
+
+
+
+<h2 class="wp-block-heading" id="Shell-vs-Bash"><strong>What is the Difference Between Shell, Bash, Terminal, and Command Prompt?</strong></h2>
+
+
+
+<p>When we talk about the command line, there are a few terms that might come up and that you should know.&nbsp;</p>
+
+
+
+<p>The term “shell” is typically used to reference any command line interface. It’s the software that interprets and executes the commands. On a Mac, the CLI application is called “Terminal,” while on Windows, it’s called “Command Prompt.”</p>
+
+
+
+<p>Bash is a type of shell and stands for “Bourne Again Shell.” It is usually the default shell in Linux systems, but there are other shells available, including ksh, tcsh, dash, and zsh.</p>
+
+
+
+<p class="toc-top-link"><meta charset="utf-8">☝️ <a href="#toc" data-type="internal" data-id="#toc">Back to the table of contents</a></p>
+
+
+
+<h2 class="wp-block-heading" id="difference-cli-gui"><strong>What is the Difference Between the CLI and GUI?</strong></h2>
+
+
+
+<p>Both the CLI and the Graphical User Interface (GUI) allow users to interact with a computer system. However, there are a few differences.</p>
+
+
+
+<p>As Michael explains,</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>&#8220;When you use programs with graphical user interfaces (GUI) certain buttons perform certain tasks on the computers. The command line interface does that too, but it allows you to do it with more precision and power. You type words and hit enter, the shell interprets those words, and works with the OS kernel and files to execute the command.&#8221;</p>
+</blockquote>
+
+
+
+<p>Okay, this may sound really confusing. So let me break it down.</p>
+
+
+
+<p>The GUI is what most people use 95% of the time to tell their computer what to do. Below is the GUI version of opening the folder &#8220;myapp&#8221; on my desktop.</p>
+
+
+
+<div class="wp-block-image"><figure class="aligncenter"><figure><a href="https://learntocodewith.me/getting-started/topics/command-line/attachment/gui/" rel="attachment wp-att-1724" data-wpel-link="internal" target="_self"><img decoding="async" width="1024" height="619" src="https://learntocodewith.me/wp-content/uploads/2014/10/gui-1024x619.png" alt="GUI screen capture opening &quot;myapp&quot; folder" class="wp-image-1724" srcset="https://learntocodewith.me/wp-content/uploads/2014/10/gui-1024x619.png 1024w, https://learntocodewith.me/wp-content/uploads/2014/10/gui-300x181.png 300w" sizes="(max-width: 1024px) 100vw, 1024px" /></a></figure></figure></div>
+
+
+
+<p>That looks normal, right?</p>
+
+
+
+<p>The image below has been taken inside the CLI on my computer. Here, I am also opening the folder &#8220;myapp&#8221; and then listing the other files/folders within it.</p>
+
+
+<div class="wp-block-image">
+<figure class="aligncenter"><a href="https://learntocodewith.me/getting-started/topics/command-line/attachment/cli/" rel="attachment wp-att-1725" data-wpel-link="internal" target="_self"><img loading="lazy" decoding="async" width="1024" height="607" src="https://learntocodewith.me/wp-content/uploads/2014/10/CLI-1024x607.png" alt="Seeing files in myapp folder via the command line" class="wp-image-1725" srcset="https://learntocodewith.me/wp-content/uploads/2014/10/CLI-1024x607.png 1024w, https://learntocodewith.me/wp-content/uploads/2014/10/CLI-300x177.png 300w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></a></figure>
+</div>
+
+
+<p>The shell is essentially where you are writing the commands in the command line. <a href="http://www.wikiwand.com/en/Bash_(Unix_shell)" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">Bash</a> is a widely used Unix shell (as seen above.) For Windows machines, you typically would use <a href="http://www.wikiwand.com/en/Cmd.exe" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">Command Prompt</a>.</p>
+
+
+
+<p>According to Google, a Kernel is:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>&#8220;&#8230; the central component of most computer operating systems; it is a bridge between applications and the actual data processing done at the hardware level.&#8221;</p>
+</blockquote>
+
+
+
+<p><strong>The point is, both the GUI and CLI&nbsp;are ways you can interact with your computer.</strong> But when it comes to the command line, once you learn the commands, it is faster and more powerful to navigate around your computer. That&#8217;s why many&nbsp;programmers prefer it.</p>
+
+
+
+<p>In fact, <strong>there are lots of directions your computer can only execute if you tell it to do so via the command line. </strong>That’s yet another reason why programmers must learn how to use it.</p>
+
+
+
+<p class="toc-top-link"><meta charset="utf-8">☝️ <a href="#toc" data-type="internal" data-id="#toc">Back to the table of contents</a></p>
+
+
+
+
+
+
+<h2 class="wp-block-heading" id="why-learn-cli"><strong>Why Should I Learn the Command Line?</strong></h2>
+
+
+
+<p>Why is learning command line skills important?</p>
+
+
+
+<p>According to Michael,</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>&#8220;A lot of very useful programs work best on the CLI and it’s easier to set up and run them on there. For instance <a href="http://www.wikiwand.com/en/Git_(software)" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">git</a>, an often-used software versioning system, <strong>was designed exclusively for the command line</strong> (though someone has probably made a GUI). It’s easier and faster to use and work on the code base with it.&#8221;</p>
+</blockquote>
+
+
+
+<p>Despite whether you have used it or not, I am sure most of you reading this have heard of <a href="https://learntocodewith.me/learn/github/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">Github</a>&nbsp;or <a rel="noopener noreferrer nofollow external" href="https://bitbucket.org/" target="_blank" data-wpel-link="external">Bitbucket</a> before. This is what Michael is talking about above. Lots of programmers working individually or in collaborative environments &#8220;push&#8221; their repository to <a title="How to Get Your Website Online Using Github Pages" rel="noopener noreferrer" href="https://learntocodewith.me/tutorials/github-pages/" target="_blank" data-wpel-link="internal">Github</a> or Bitbucket. There are also many other&nbsp;features and benefits to using git.</p>
+
+
+
+<p>Moreover, Michael explains:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>&#8220;The CLI&nbsp;allows you to do manipulations with your system’s internals and with code in a much more fine-tuned way.. [It] offers greater flexibility and control than a GUI&nbsp;regardless of what OS is used. Many programs that you might want to use in your software that are hosted on say Github also require running some commands on the CLI&nbsp;in order to get them running.&#8221;</p>
+</blockquote>
+
+
+
+<p><strong>Basically, it&#8217;s really, really important that you at least have a basic understanding of the command line</strong>. But to be a full-fledged developer, you have to&nbsp;be comfortable working in the command line interface.</p>
+
+
+
+<p class="toc-top-link"><meta charset="utf-8">☝️ <a href="#toc" data-type="internal" data-id="#toc">Back to the table of contents</a></p>
+
+
+
+<h2 class="wp-block-heading" id="what-cli-looks-like"><strong>What Does the Command Line Look Like?</strong></h2>
+
+
+
+<p>Anyone with a computer can easily start using the command line, as it comes preinstalled with Windows, Linux, and Mac computers. You don’t need any special command line tools, just the skills!</p>
+
+
+
+<p>To open the command prompt in Windows, open the Start menu, click the Windows icon, scroll down to find the Windows System folder, and click Command Prompt.&nbsp;</p>
+
+
+
+<p>To open the terminal on Mac, open spotlight search (command + the space bar), type in “terminal,” and select the terminal application.</p>
+
+
+
+<p>How to use command line interfaces begins with understanding the components of a command. CLI coding is made up of a few elements: a prompt, a command to run, an option/flag, and an argument/parameter.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="372" src="https://learntocodewith.me/wp-content/uploads/2021/10/anatomy-of-command-line-1024x372.png" alt="anatomy of a command line" class="wp-image-21689" srcset="https://learntocodewith.me/wp-content/uploads/2021/10/anatomy-of-command-line-1024x372.png 1024w, https://learntocodewith.me/wp-content/uploads/2021/10/anatomy-of-command-line-300x109.png 300w, https://learntocodewith.me/wp-content/uploads/2021/10/anatomy-of-command-line-768x279.png 768w, https://learntocodewith.me/wp-content/uploads/2021/10/anatomy-of-command-line-1536x558.png 1536w, https://learntocodewith.me/wp-content/uploads/2021/10/anatomy-of-command-line.png 1540w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /><figcaption class="wp-element-caption"><em>Image source: </em><a href="https://www.learnenough.com/command-line-tutorial" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external"><em>Learn Enough Command Line Tutorial</em></a></figcaption></figure>
+
+
+
+<p><strong>Prompts: </strong>Every command line starts with a prompt, which is provided automatically by the terminal and usually ends with a $ or %. The prompt depends on the details of your system and can be customized (which is a more advanced topic).</p>
+
+
+
+<p><strong>Commands:</strong> This is where you tell the computer what to do. Some examples of commands include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>cd: change directory</li>
+
+
+
+<li>open: open files</li>
+
+
+
+<li>mv: move a file</li>
+
+
+
+<li>mkdir: create a directory</li>
+
+
+
+<li>top: list actively running computer processes</li>
+
+
+
+<li>ditto: copy contents of folder to a new folder</li>
+</ul>
+
+
+
+<p><strong>Options: </strong>Bits of info that customize how a command works. For example, for the Linux ls (ls) command that allows you to view a list of files and folders in a given directory, options include:</p>
+
+
+
+<ul class="wp-block-list">
+<li>&nbsp;-l: shows permissions, the user who made it, and other details&nbsp;</li>
+
+
+
+<li>-a: shows hidden files</li>
+
+
+
+<li>-S: sort by file size, largest first</li>
+
+
+
+<li>-C: list entries by columns</li>
+</ul>
+
+
+
+<p><strong>Arguments: </strong>An argument could be the string of characters you want to print or paths to files or folders. Not all programs need arguments or parameters.</p>
+
+
+
+<p class="toc-top-link"><meta charset="utf-8">☝️ <a href="#toc" data-type="internal" data-id="#toc">Back to the table of contents</a></p>
+
+
+
+<h2 class="wp-block-heading" id="how-cli"><strong>How to Learn Command Line Skills</strong></h2>
+
+
+
+<p>So, why learn command line skills for your coding journey? And if you want to learn the command line, what’s the best way to go about it? In this section, we’ll quickly cover some of the important Q&amp;As about how to learn the command line.</p>
+
+
+
+<h3 class="wp-block-heading" id="h-who-should-learn-how-to-use-command-line-interfaces"><strong>🤔 Who Should Learn How to Use Command Line Interfaces?</strong></h3>
+
+
+
+<p>Learning how to operate within the command line has practical applications for any sort of programmer, especially those working on the backend. As Michael says:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>&#8220;If you’re a backend developer [it]&nbsp;matters more since you’ll be dealing with the server aspect of it, such as what OS is it running, configuration files, and other things needed to make sure it is running &#8230;. [also]&nbsp;making sure the code for your site is working.&#8221;</p>
+</blockquote>
+
+
+
+<p>Nonetheless, even if you&#8217;re a <a href="https://learntocodewith.me/work-in-tech/front-end-developer/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">front end developer</a>, knowing how to work with the CLI is beneficial:</p>
+
+
+
+<blockquote class="wp-block-quote is-layout-flow wp-block-quote-is-layout-flow">
+<p>&#8220;Front end developers don’t need to know it as much as you are really just designing the pages for the website, though it certainly wouldn’t hurt to know it if you’re trying to beef up your resume &#8230; And you’ll definitely need to know some of it if your team is using git.&#8221;</p>
+</blockquote>
+
+
+
+<p><div class='tm-tweet-clear'></div><div class='tm-click-to-tweet'><div class='tm-ctt-text'><a href="https://twitter.com/share?text=Front+end+devs+don%27t+need+to+know+the+CLI%26nbsp%3Bas+well%26nbsp%3Bas+backend+devs.+But+it%26nbsp%3Bcan+boost%26nbsp%3Byour+resume.&#038;via=learncodewithme&#038;related=learncodewithme&#038;url=https://learntocodewith.me/learn/command-line/" target="_blank" data-wpel-link="external" rel="nofollow external noopener noreferrer">Front end devs don&#8217;t need to know the CLI&nbsp;as well&nbsp;as backend devs. But it&nbsp;can boost&nbsp;your resume.</a></div><a href="https://twitter.com/share?text=Front+end+devs+don%27t+need+to+know+the+CLI%26nbsp%3Bas+well%26nbsp%3Bas+backend+devs.+But+it%26nbsp%3Bcan+boost%26nbsp%3Byour+resume.&#038;via=learncodewithme&#038;related=learncodewithme&#038;url=https://learntocodewith.me/learn/command-line/" target="_blank" class="tm-ctt-btn" data-wpel-link="external" rel="nofollow external noopener noreferrer">Click To Tweet</a><div class='tm-ctt-tip'></div></div></p>
+
+
+
+<p>Proficiency with the command line isn’t only beneficial for developers. It can also be helpful for anyone who wants to <em>work</em> closely with developers, such as <a href="https://learntocodewith.me/posts/web-developers-ux-designers/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">UX designers</a> and <a href="https://learntocodewith.me/work-in-tech/product-management/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">product managers</a>. Some people, like Michael, use the CLI almost exclusively for they find&nbsp;it preferable to the GUI.</p>
+
+
+
+<p>Ultimately, learning command line basics (at least) is crucial if you ever want to be taken seriously as a developer at the professional level.</p>
+
+
+
+<h3 class="wp-block-heading"><strong>⏰ How long does it take to learn the command line?</strong></h3>
+
+
+
+<p>The command line is relatively easy to learn, so it should take only a few weeks to get familiar with it. Of course, there are more advanced topics that will take longer to master, but understanding the syntax and how it works should only take a few weeks.</p>
+
+
+
+<p>For example, <a href="https://learntocodewith.me/go/codecademy-learn-command-line/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">Codecademy&#8217;s Learn the Command Line</a> takes eight hours to complete. You can learn the basics of the command line in <a href="https://learntocodewith.me/go/coursera-practical-introduction-to-the-command-line/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">Coursera’s Practical Introduction to the Command Line</a> in just two hours.</p>
+
+
+
+<figure class="wp-block-image size-large"><img loading="lazy" decoding="async" width="1024" height="684" src="https://learntocodewith.me/wp-content/uploads/2021/10/terminal-1024x684.jpg" alt="CLI on a laptop" class="wp-image-21690" srcset="https://learntocodewith.me/wp-content/uploads/2021/10/terminal-1024x684.jpg 1024w, https://learntocodewith.me/wp-content/uploads/2021/10/terminal-300x200.jpg 300w, https://learntocodewith.me/wp-content/uploads/2021/10/terminal-768x513.jpg 768w, https://learntocodewith.me/wp-content/uploads/2021/10/terminal-1536x1025.jpg 1536w, https://learntocodewith.me/wp-content/uploads/2021/10/terminal.jpg 1540w" sizes="auto, (max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<h3 class="wp-block-heading"><strong>❓ When to learn the command line</strong></h3>
+
+
+
+<p>If you’re new to coding, you might be wondering <em>when</em> you should learn the command line. I&nbsp; recommend learning <a href="https://learntocodewith.me/learn/html/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">HTML</a>, <a href="https://learntocodewith.me/learn/css/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">CSS</a>, and <a href="https://learntocodewith.me/learn/javascript/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal">JavaScript</a> first, then tackling the command line.</p>
+
+
+
+<p>However, you can choose to start learning the command line while learning these other languages. It just might be easier to understand if you have at least a basic knowledge of HTML/CSS and JavaScript.</p>
+
+
+
+
+
+
+<h3 class="wp-block-heading" id="h-where-to-learn-command-line-programming"><strong>💻 Where to learn command line programming</strong></h3>
+
+
+
+<h4 class="wp-block-heading" id="h-what-michael-recommends">What Michael Recommends</h4>
+
+
+
+<p>As far as recommended resources go, Michael recommends:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong><a href="http://linuxcommand.org/lc3_learning_the_shell.php" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">LinuxCommand.org</a>:&nbsp;</strong>An excellent resource to begin learning the CLI, it builds from the basics up to shell scripting</li>
+
+
+
+<li><strong><a href="https://wiki.archlinux.org/index.php/Command-line_shell" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">Arch Wiki&#8217;s Command Line Shell</a>:</strong>&nbsp;While this information may be from the Arch Wiki it is a resource that documents many things and usually has links to other resources.</li>
+
+
+
+<li><strong><a href="http://cglab.ca/~morin/teaching/1405/clcc/book/cli-crash-course.html" target="_blank" rel="noreferrer noopener nofollow external" data-wpel-link="external">Zed Shaw&#8217;s Command Line Crash Course</a>:</strong>&nbsp;Covers Linux, Mac and Windows and is well worth the read if you just want to learn the basics.</li>
+</ul>
+
+
+
+<h4 class="wp-block-heading" id="h-what-i-recommend">What I Recommend</h4>
+
+
+
+<ul class="wp-block-list">
+<li><a href="https://www.learnenough.com/command-line" data-wpel-link="external" target="_blank" rel="nofollow external noopener noreferrer"><strong>​​</strong></a><a href="https://learntocodewith.me/command-line/unix-command-cheat-sheet/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><strong>Unix Command Cheat Sheet:</strong></a> First things first, check out my handy Unix command line cheat sheet.</li>
+
+
+
+<li><a href="https://learntocodewith.me/go/learn-enough-developer-fundamentals-01-learn-enough-command/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><strong>Learn Enough Command Line to Be Dangerous</strong></a> by Michael Hartl is an introduction to the Unix command line for complete beginners.</li>
+
+
+
+<li><a href="https://learntocodewith.me/go/pluralsight-command-line/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><strong>Pluralsight&#8217;s Meet the Command Line</strong></a><strong>: </strong>This Unix command line course starts with the basics and ends with advanced tips and tricks. <em>(Read our full Pluralsight review </em><a href="https://learntocodewith.me/reviews/pluralsight/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><em>here</em></a><em>.)</em></li>
+
+
+
+<li><a href="https://learntocodewith.me/go/codecademy-learn-command-line/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><strong>Codecademy&#8217;s Learn the Command Line</strong></a><strong>:</strong> This course will teach you to navigate, access, and modify files and folders on your computer—all without a mouse! <em>(Read our full Codecademy review</em><a href="https://learntocodewith.me/reviews/codecademy/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><em> here</em></a><em>.)</em></li>
+
+
+
+<li><a href="https://learntocodewith.me/go/udacity-linux-command-line-basics/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><strong>Udacity&#8217;s Linux Command Line Basics</strong></a><strong>: </strong>Learn the basics of the command line interface of a Linux server: the terminal and shell (GNU Bash). This course includes an introduction to files and directories in the Linux filesystem.</li>
+
+
+
+<li><a href="https://learntocodewith.me/go/launch-school-git-github-book/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><strong>Launch School’s A Guide to Git and Github</strong></a>: This free beginner-friendly ebook offers a gentle intro to Git and GitHub.</li>
+
+
+
+<li><a href="https://learntocodewith.me/go/skillshare-command-line-interface/" target="_blank" rel="noreferrer noopener" data-wpel-link="internal"><strong>Skillshare’s Command Line Interface / Linux Terminal for Absolute Beginners</strong></a><strong>: </strong>Learn how to use the terminal on any Linux or Unix based machines.</li>
+</ul>
+
+
+
+<p>Now it’s up to you to start learning command line programming! The command line for beginners is a fantastic foundational skill to help set yourself up for future success as a developer.</p>
+
+
+
+<p><strong>About the Author</strong></p>
+
+
+
+<p>Michael Gattozzi is a student at Umass Boston and a member of the MA Army National Guard. In his free time he likes to write scripts, read technical and non technical things, and tinker with his laptop for the perfect setup. He&#8217;s also a follower of the Google Dark Arts and an Arch Linux die hard fan.</p>
+
+
+
+<p>You can follow him on Github on&nbsp;<a href="https://github.com/mgattozzi" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">github.com/mgattozzi</a> and on Twitter <a href="https://twitter.com/mgattozzi" target="_blank" rel="noopener noreferrer nofollow external" data-wpel-link="external">@mgattozzi</a>.</p>
+
+										
+																				 <!-- amazon specific disclosure --> 
+									</section> <!-- end article section -->
+								</article> <!-- end article -->
+							
+								<hr />
+
+								<footer class="single-footer">
+								
+									<div class="pull-right hidden-xs">
+										<a class="twitter-share-button" href="https://twitter.com/share" data-via="learncodewithme">
+											Tweet
+										</a>
+										<script>
+											window.twttr = (function(d, s, id) {
+												var js, fjs = d.getElementsByTagName(s)[0],
+													t = window.twttr || {};
+												if (d.getElementById(id)) return;
+												js = d.createElement(s);
+												js.id = id;
+												js.src = "https://platform.twitter.com/widgets.js";
+												fjs.parentNode.insertBefore(js, fjs);
+												t._e = [];
+												t.ready = function(f) {
+													t._e.push(f);
+												};
+												return t;
+											}(document, "script", "twitter-wjs"));
+										</script>
+									</div>
+							
+									<div class="tagged">
+																			</div>
+
+									<div class="about-box">
+	<div class="row">
+		<div class="col-sm-3 laurence-photo">
+			<img width="152" height="152" src="https://learntocodewith.me/wp-content/themes/remixx/images/laurence-bio3.jpg" class="img-circle" alt="laurence photo">
+		</div>
+		<div class="col-sm-9 copy-section" itemscope="itemscope" itemtype="http://schema.org/Person" itemprop="author">
+			<p class="h5" itemprop="name">About Laurence Bradford</p>
+			<p>Hey! I'm the creator of Learn to Code With Me, a blog for beginners teaching themselves how to code.
+		       Once upon a time, I was digitally unsavvy. <em>But not anymore.</em> Find out how I changed my life by <a href="https://learntocodewith.me/about/">teaching myself digital skills here</a>.</p>
+		</div>
+	</div>
+</div>									<hr class="clearfix small-hr">
+									
+									<div class="row">
+										<div class="col-sm-6">
+											<div class="up-next">
+
+																									<p>Read Next... </p>
+													<img width="600" height="313" src="https://learntocodewith.me/wp-content/uploads/2021/10/What-is-the-no-code-movement-600x313.png" class="attachment-bones-rect size-bones-rect wp-post-image" alt="what is the no-code movement?" title="What Is Low Code / No Code Development?" decoding="async" loading="lazy" srcset="https://learntocodewith.me/wp-content/uploads/2021/10/What-is-the-no-code-movement-600x313.png 600w, https://learntocodewith.me/wp-content/uploads/2021/10/What-is-the-no-code-movement-300x157.png 300w, https://learntocodewith.me/wp-content/uploads/2021/10/What-is-the-no-code-movement-1024x536.png 1024w, https://learntocodewith.me/wp-content/uploads/2021/10/What-is-the-no-code-movement-768x402.png 768w, https://learntocodewith.me/wp-content/uploads/2021/10/What-is-the-no-code-movement-1536x805.png 1536w, https://learntocodewith.me/wp-content/uploads/2021/10/What-is-the-no-code-movement.png 1680w" sizes="auto, (max-width: 600px) 100vw, 600px" />													<p class="h5">
+														<a href="https://learntocodewith.me/learn/low-code-no-code/">What Is Low Code / No Code Development?</a>
+													</p>
+													<a href="https://learntocodewith.me/learn/low-code-no-code/" class="btn btn-danger">read next post <i class="fa fa-angle-double-right"></i></a>
+												
+											</div>
+										</div>
+
+										<div id="widget-popular-posts">
+											<div id="nav_menu-7" class="trending-posts col-sm-5 col-sm-offset-1 widget_nav_menu"><p>Popular Posts</p><div class="menu-popular-posts-container"><ul id="menu-popular-posts" class="menu"><li id="menu-item-16406" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16406"><a href="https://learntocodewith.me/posts/coding-interview-resources/">The 33 Best Technical Interview Prep Courses, Books, &#038; Resources</a></li>
+<li id="menu-item-16407" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16407"><a href="https://learntocodewith.me/posts/programming-books/">70 Best Programming Books for Every Coder in 2022</a></li>
+<li id="menu-item-16408" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16408"><a href="https://learntocodewith.me/posts/code-for-free/">113 of the Best Places to Learn to Code For Free</a></li>
+<li id="menu-item-16409" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16409"><a href="https://learntocodewith.me/posts/become-a-software-engineer/">17 Steps to Becoming a Software Engineer (Without a CS Degree)</a></li>
+<li id="menu-item-16410" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16410"><a href="https://learntocodewith.me/reviews/best-web-development-courses/">43 Best Web Development Courses Online (Free &#038; Paid)</a></li>
+</ul></div></div>										</div> <!-- .popular-posts -->
+									</div> <!-- end row -->
+
+								</footer> <!-- article footer -->
+
+								<!-- removing blog comments that were once here 							
+					<div id="comments"> 
+						
+					</div> 
+					-->
+
+							
+						
+					</div> <!-- end col post_content -->
+
+				</div> <!-- end main -->
+
+			</div> <!-- end .single-post -->
+		</div> <!-- .wrap basic-->
+</div> <!-- .container-fluid-->
+
+
+
+<footer class="main-footer" role="contentinfo" itemscope="itemscope" itemtype="http://schema.org/WPFooter">
+	<div class="container-fluid">
+		<div class="clearfix row">
+			<div class="col-sm-12">
+				<div id="widget-footer" class="clearfix row">
+
+					<div id="widget-footer1">
+					<div id="nav_menu-3" class="widget col-sm-3 widget_nav_menu"><p class="widgettitle h4">Coding platform reviews</p><div class="menu-coding-platform-reviews-container"><ul id="menu-coding-platform-reviews" class="menu"><li id="menu-item-15144" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15144"><a href="https://learntocodewith.me/reviews/coursera/">Coursera</a></li>
+<li id="menu-item-15163" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15163"><a href="https://learntocodewith.me/reviews/udemy/">Udemy</a></li>
+<li id="menu-item-16483" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-16483"><a href="https://learntocodewith.me/reviews/codecademy/">Codecademy</a></li>
+<li id="menu-item-20623" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-20623"><a href="https://learntocodewith.me/reviews/udacity/">Udacity</a></li>
+</ul></div></div><div id="nav_menu-4" class="widget col-sm-3 widget_nav_menu"><p class="widgettitle h4">Recommendations</p><div class="menu-recommendations-container"><ul id="menu-recommendations" class="menu"><li id="menu-item-15137" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15137"><a href="https://learntocodewith.me/posts/tech-gifts/">🎁 Best Tech &#038; Coding Gifts</a></li>
+<li id="menu-item-15135" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15135"><a href="https://learntocodewith.me/posts/code-for-free/">101+ Free Places to Learn to Code</a></li>
+<li id="menu-item-15134" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15134"><a href="https://learntocodewith.me/posts/programming-books/">Best Programming Books</a></li>
+<li id="menu-item-15136" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15136"><a href="https://learntocodewith.me/posts/tech-skills-in-demand/">Top Tech Skills to Learn</a></li>
+</ul></div></div><div id="nav_menu-5" class="widget col-sm-3 widget_nav_menu"><p class="widgettitle h4">Working in tech</p><div class="menu-working-in-tech-container"><ul id="menu-working-in-tech" class="menu"><li id="menu-item-15138" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15138"><a href="https://learntocodewith.me/posts/make-money-coding/">Make Money While Learning to Code</a></li>
+<li id="menu-item-15139" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15139"><a href="https://learntocodewith.me/posts/portfolio-tips/">Building Your Online Portfolio</a></li>
+<li id="menu-item-15140" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15140"><a href="https://learntocodewith.me/posts/technical-interview/">Acing Your Tech Interview</a></li>
+<li id="menu-item-15141" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-15141"><a href="https://learntocodewith.me/freelance-guide/">Freelance Starter Guide</a></li>
+</ul></div></div><div id="nav_menu-6" class="widget col-sm-3 widget_nav_menu"><p class="widgettitle h4">Special resources</p><div class="menu-special-resources-container"><ul id="menu-special-resources" class="menu"><li id="menu-item-15146" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15146"><a href="https://learntocodewith.me/posts/poc-tech-resources/">Tech Resources for POC</a></li>
+<li id="menu-item-15147" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15147"><a href="https://learntocodewith.me/posts/13-places-women-learn-code/">Coding Resources for Women</a></li>
+<li id="menu-item-15148" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15148"><a href="https://learntocodewith.me/posts/career-change-at-40/">Learning to Code After Age 40</a></li>
+<li id="menu-item-15149" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-15149"><a href="https://learntocodewith.me/resources/coding-for-kids/">Teach Your Child to Code</a></li>
+</ul></div></div>					</div>
+
+					<div id="widget-footer2">
+					<div id="custom_html-2" class="widget_text widget col-sm-3 widget_custom_html"><div class="textwidget custom-html-widget"><div class="footer-logo"><img width="100" height="65" src="https://learntocodewith.me/wp-content/uploads/2018/05/LTCWM_FinalLogo-300x196.png" class="image wp-image-8534  attachment-medium size-medium" alt="Learn to Code With Me" style="max-width: 100%; height: auto;" ></div>
+
+<div class="copyright-footer"><p>© 2014 -  2021 <a title="Get Digital Skills, Be Happy" href="https://learntocodewith.me/">learntocodewith.me</a></p><p>Get digital skills, be happy.</p></div>
+
+<div id="social-icons-widget" class="widget"><p class="widgettitle h4">Follow us</p>
+<ul class="social-icons-list">
+<li class="social-icons-item">
+<a href="https://www.facebook.com/learntocodewithme" aria-label="Learn to Code With Me Facebook Page"> 
+<i class="fa fa-facebook"></i>
+</a>
+</li>
+<li class="social-icons-item">
+<a href="https://twitter.com/learncodewithme" aria-label="Learn to Code With Me Twitter Page">
+	<i class="fa fa-twitter"></i>
+</a>
+</li>
+<li class="social-icons-item">
+<a href="https://www.instagram.com/laurencebradford/" aria-label="Learn to Code With Me Instagram Page">
+	<i class="fa fa-instagram"></i>
+</a>
+</li>
+<li class="social-icons-item">
+<a href="https://www.youtube.com/learntocodewithme" aria-label="Learn to Code With Me Youtube Page">
+	<i class="fa fa-youtube-play"></i>
+</a>
+</li>
+</ul>
+</div>
+</div></div><div id="nav_menu-2" class="widget col-sm-3 widget_nav_menu"><div class="menu-other-links-container"><ul id="menu-other-links" class="menu"><li id="menu-item-15131" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-15131"><a href="https://learntocodewith.me/blog/">Blog</a></li>
+<li id="menu-item-15133" class="menu-item menu-item-type-post_type_archive menu-item-object-ltcwm_podcast menu-item-15133"><a href="https://learntocodewith.me/podcast/">Podcast</a></li>
+<li id="menu-item-15132" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15132"><a href="https://learntocodewith.me/about/">About</a></li>
+<li id="menu-item-15129" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15129"><a href="https://learntocodewith.me/faq/">FAQ</a></li>
+<li id="menu-item-15130" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15130"><a href="https://learntocodewith.me/contact/">Contact</a></li>
+<li id="menu-item-15127" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15127"><a href="https://learntocodewith.me/permissions-policy/">Permissions Policy</a></li>
+<li id="menu-item-15126" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-15126"><a href="https://learntocodewith.me/affiliate-disclaimer/">Earnings Disclaimer</a></li>
+<li id="menu-item-15128" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-15128"><a rel="privacy-policy" href="https://learntocodewith.me/privacy-policy/">Privacy Policy</a></li>
+</ul></div></div>					<div id="custom_html-3" class="widget_text widget col-sm-6 widget_custom_html"><div class="textwidget custom-html-widget"><div class="subscribe-widget">
+<p class="lead">Learning tech skills has changed my life for the better. <strong>And it can do the same for you.</strong></p>
+</div>
+<div>
+<a class="btn btn-danger btn-lg" href="https://learntocodewith.me/newsletter/">LEARN TO CODE, TOO</a>
+</div>
+</div></div>					</div>
+
+				</div>
+
+				<nav class="links-footer clearfix">
+									</nav>
+				<!-- new copyright -->
+				<div class="copyright text-center">
+					<p>
+						Built by <span itemprop="creator" itemscope itemtype="http://schema.org/Person"><span itemprop="name">Laurence Bradford</span></span> with <i class="fa fa-heart"></i>  and <i class="fa fa-coffee"></i>. WordPress hosting by <a href="https://learntocodewith.me/go/kinsta/">Kinsta</a>. CDN by <a href="https://learntocodewith.me/go/stackpath/">StackPath</a>.
+					</p>
+				</div> <!-- end copyright -->
+
+			</div> <!-- end .col -->
+		</div> <!-- end .row -->
+	</div> <!-- end container -->
+</footer> <!-- end .main-footer -->
+
+<!--[if lt IE 7 ]>
+		<script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+		<script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+<![endif]-->
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/remixx/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script type="text/javascript" id="convertkit-broadcasts-js-extra">
+/* <![CDATA[ */
+var convertkit_broadcasts = {"ajax_url":"https://learntocodewith.me/wp-admin/admin-ajax.php","action":"convertkit_broadcasts_render","debug":""};
+//# sourceURL=convertkit-broadcasts-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://learntocodewith.me/wp-content/plugins/convertkit/resources/frontend/js/broadcasts.js?ver=3.1.5" id="convertkit-broadcasts-js"></script>
+<script type="text/javascript" src="https://learn-to-code-with-me.kit.com/commerce.js?ver=6.9.4" id="convertkit-commerce-js"></script>
+<script type="text/javascript" id="tap-disclosure-notice-js-extra">
+/* <![CDATA[ */
+var tap_disclosure_notice_vars = {"disclosure_page":"https://learntocodewith.me","display_icon":"","notice_icon_message":"This is an affiliate link. See our {{disclosure_link}}.","display_bottom_post":"","bottom_post_message":"\u003Ch4\u003EAFFILIATE DISCLOSURE:\u003C/h4\u003E\u003Cp\u003EThis article may contain affiliate links. See our {{disclosure_link}} for more information.\u003C/p\u003E","notice_link_text":"disclosure notice","post_type":"post","post_id":"21663","content_selector":"body #post-%d"};
+//# sourceURL=tap-disclosure-notice-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://learntocodewith.me/wp-content/plugins/thirstyaffiliates-pro/js/app/disclosure-notice/dist/disclosure-notice.js?ver=1.7.8" id="tap-disclosure-notice-js"></script>
+<script type="text/javascript" id="ta_main_js-js-extra">
+/* <![CDATA[ */
+var thirsty_global_vars = {"home_url":"//learntocodewith.me","ajax_url":"https://learntocodewith.me/wp-admin/admin-ajax.php","link_fixer_enabled":"yes","link_prefix":"go","link_prefixes":{"0":"recommends","8":"go"},"post_id":"21663","enable_record_stats":"yes","enable_js_redirect":"yes","disable_thirstylink_class":""};
+//# sourceURL=ta_main_js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://learntocodewith.me/wp-content/plugins/thirstyaffiliates/js/app/ta.min.js?ver=3.11.10" id="ta_main_js-js"></script>
+<script type="text/javascript" src="https://learntocodewith.me/wp-content/plugins/beautiful-and-responsive-cookie-consent/public/cookieNSCconsent.min.js?ver=4.9.2" id="nsc_bar_nice-cookie-consent_js-js"></script>
+<script type="text/javascript" id="nsc_bar_nice-cookie-consent_js-js-after">
+/* <![CDATA[ */
+window.addEventListener("load",function(){  window.cookieconsent.initialise({"content":{"deny":"Deny","dismiss":"OK !","allow":"Allow","link":"","href":"http:\/\/yourdomain\/dataprivacy","message":"We use cookies on our website. If you continue using the site, we'll assume you're happy with this.","policy":"Cookie Settings","close":"x","savesettings":"Save Settings","target":"_blank","linksecond":"Just another Link","hrefsecond":"https:\/\/yourdomain\/anotherLink"},"type":"info","palette":{"popup":{"background":"#fafafafc","text":"#686868"},"button":{"background":"#E81C0D","text":"#FFF","border":""},"switches":{"background":"","backgroundChecked":"","switch":"","text":""}},"position":"bottom","theme":"classic","cookietypes":[{"label":"Technical","checked":"checked","disabled":"disabled","cookie_suffix":"tech"},{"label":"Marketing","checked":"","disabled":"","cookie_suffix":"marketing"}],"revokable":"0","container":"","customizedFont":"'Open Sans', sans-serif","setDiffDefaultCookiesFirstPV":"0","dismissOnScroll":300,"dismissOnTimeout":6000,"blockScreen":"0","disableWithiniFrames":"0","dataLayerName":"dataLayer","improveBannerLoadingSpeed":"0"})});
+//# sourceURL=nsc_bar_nice-cookie-consent_js-js-after
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://learntocodewith.me/wp-content/themes/remixx/assets/js/all.min.js?ver=1.2" id="wpbs-scripts-js"></script>
+<script type="text/javascript" id="convertkit-js-js-extra">
+/* <![CDATA[ */
+var convertkit = {"ajaxurl":"https://learntocodewith.me/wp-admin/admin-ajax.php","debug":"","nonce":"3137cc075f","subscriber_id":""};
+//# sourceURL=convertkit-js-js-extra
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://learntocodewith.me/wp-content/plugins/convertkit/resources/frontend/js/convertkit.js?ver=3.1.5" id="convertkit-js-js"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://learntocodewith.me/wp-includes/js/wp-emoji-release.min.js?ver=6.9.4"}}
+</script>
+<script type="module">
+/* <![CDATA[ */
+/*! This file is auto-generated */
+const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(window._wpemojiSettings=a,"wpEmojiSettingsSupports"),s=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const a=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===a[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,a){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!a(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,a){let r;const o=(r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),s=(o.textBaseline="top",o.font="600 32px Arial",{});return e.forEach(e=>{s[e]=t(o,e,n,a)}),s}function r(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}a.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),c.toString(),p.toString()].join(",")+"));",a=new Blob([e],{type:"text/javascript"});const r=new Worker(URL.createObjectURL(a),{name:"wpTestEmojiSupports"});return void(r.onmessage=e=>{i(n=e.data),r.terminate(),t(n)})}catch(e){}i(n=f(s,u,c,p))}t(n)}).then(e=>{for(const n in e)a.supports[n]=e[n],a.supports.everything=a.supports.everything&&a.supports[n],"flag"!==n&&(a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&a.supports[n]);var t;a.supports.everythingExceptFlag=a.supports.everythingExceptFlag&&!a.supports.flag,a.supports.everything||((t=a.source||{}).concatemoji?r(t.concatemoji):t.wpemoji&&t.twemoji&&(r(t.twemoji),r(t.wpemoji)))});
+//# sourceURL=https://learntocodewith.me/wp-includes/js/wp-emoji-loader.min.js
+/* ]]> */
+</script>
+
+
+
+</body>
+</html>

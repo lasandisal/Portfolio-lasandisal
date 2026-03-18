@@ -3,56 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family & Life | lasandisal</title>
+    <title>Family Life | lasandisal</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style-subpage.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style-subpage.css">
 </head>
 <body>
 
     <header>
-        <nav>
-            <div class="logo">
-                <a href="../index.html">lasandisal<span>.</span></a>
-            </div>
-            <ul>
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../gallery.html" class="active">Gallery</a></li>
-                <li><a href="../contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <div class="logo">
+            <a href="../index.html">lasandisal<span>.</span></a>
+        </div>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../projects.html">Projects</a></li>
+            <li><a href="../gallery.html" class="active">Gallery</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
 
     <main class="subpage-container">
-        <div class="back-nav">
-            <a href="../gallery.html" class="back-btn">
-                <i class="fa-solid fa-arrow-left"></i> All Photos
-            </a>
+    <div class="back-nav">
+        <a href="../gallery.html" class="back-btn">
+            <i class="fa-solid fa-arrow-left"></i> All Archives
+        </a>
+    </div>
+
+    <section class="photo-mosaic" id="galleryGrid">
+        
+        <div class="image-item intro-card span-2 tall">
+            <span class="module-tag">Gallery 04</span>
+            <h2>Family <span>Life</span></h2>
+            <p>Behind every achievement is a strong foundation — my family and life experiences that continue to inspire and support my journey..</p>
+            <div class="photo-stats">20+ Moments Captured</div>
         </div>
 
-        <div class="content-layout">
-            <section class="side-info">
-                <h2>Family & Life</h2>
-                <p>Memories & People: The core moments that define home and belonging.</p>
-            </section>
-
-            <section class="photo-grid">
-                <div class="image-item landscape">
-                    <img src="../images/gallery/family-life/1000019516.jpg" alt="Celebration">
-                </div>
-                <div class="image-item landscape">
-                    <img src="../images/gallery/family-life/WhatsApp Image 2026-02-07 at 1.03.01 PM (1).jpeg" alt="Family Gathering">
-                </div>
-                <div class="image-item landscape">
-                    <img src="../images/gallery/family-life/WhatsApp Image 2026-02-07 at 1.03.01 PM.jpeg" alt="Memory">
-                </div>
-                <div class="image-item wide-landscape">
-                    <img src="../images/gallery/family-life/WhatsApp Image 2026-02-07 at 1.22.52 PM.jpeg" alt="Special Event">
-                </div>
-            </section>
+        <div class="image-item portrait-item reveal">
+            <img src="../images/gallery/family-life/badulla.jpg" alt="Portrait">
         </div>
-    </main>
 
+        <div class="image-item landscape-item reveal">
+            <img src="../images/gallery/family-life/hanthane.jpg" alt="Landscape">
+        </div>
+
+        <div class="image-item hero-item reveal">
+            <img src="../images/gallery/family-life/us.jpeg" alt="Main Moment">
+        </div>
+
+        <div class="image-item landscape-item reveal hidden-photo">
+            <img src="../images/gallery/family-life/idiots.jpeg" alt="Landscape View">
+        </div>
+
+        <div class="image-item portrait-item reveal hidden-photo">
+            <img src="../images/gallery/family-life/in la.jpeg" alt="Portrait">
+        </div>
+
+        <div class="image-item hero-item reveal hidden-photo">
+            <img src="../images/gallery/family-life/4 us.jpeg" alt="Main Moment">
+        </div>
+
+        <div class="image-item hero-item reveal hidden-photo">
+            <img src="../images/gallery/family-life/idiots 2(1).jpeg" alt="Main Moment">
+        </div>
+
+        <div class="image-item hero-item reveal hidden-photo">
+            <img src="../images/gallery/family-life/idiots 2(2).jpeg" alt="Main Moment">
+        </div>
+
+        <!-- <div class="image-item portrait-item reveal hidden-photo">
+            <img src="../images/gallery/family-life/gradu 4.jpeg" alt="Portrait">
+        </div> -->
+
+        
+
+       
+
+    </section>
+    <div class="load-more-section">
+        <button id="loadMoreBtn" class="btn-aesthetic">
+            <span>Expand Archive</span>
+            <i class="fa-solid fa-plus"></i>
+        </button>
+    </div>
+</main>
+
+<footer class="mahogany-footer">
+ 
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">lasandisal<span>.</span></a>
+            <p>Architecting seamless digital experiences through robust code and bold design.</p>
+        </div>
+
+        <div class="footer-nav">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+                <a href="#"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="#"><i class="ph ph-github-logo"></i></a>
+                <a href="#"><i class="ph ph-instagram-logo"></i></a>
+                <a href="#"><i class="ph ph-facebook-logo"></i></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+    <p>&copy; 2026 Lasandi Salwathura. Designed & Developed with passion. All Rights Reserved.</p>
+</div>
+</footer>
+
+<script>
+    // 1. Reveal images as you scroll
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // 2. Expand Gallery Logic (The "Expand Archive" Button)
+    const loadBtn = document.getElementById('loadMoreBtn');
+    
+    if(loadBtn) {
+        loadBtn.addEventListener('click', () => {
+            const hiddenPhotos = document.querySelectorAll('.hidden-photo');
+            
+            hiddenPhotos.forEach((photo, index) => {
+                // Remove the 'display: none'
+                photo.style.display = 'block';
+                
+                // Stagger the entrance so they don't all pop at once
+                setTimeout(() => {
+                    photo.classList.add('active');
+                }, index * 100); 
+            });
+            
+            // Hide the button after everything is revealed
+            loadBtn.parentElement.style.opacity = '0';
+            setTimeout(() => {
+                loadBtn.parentElement.style.display = 'none';
+            }, 500);
+        });
+    }
+</script>
 </body>
 </html>

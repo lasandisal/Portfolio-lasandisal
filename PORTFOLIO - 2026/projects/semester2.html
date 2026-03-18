@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Semester 2 | Projects</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/semester.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
 </head>
 <body>
@@ -25,66 +25,164 @@
     </header>
 
     <main class="semester-view">
-        <a href="../projects.html" class="back-btn">
-            <i class="ph ph-arrow-left"></i> All Projects
-        </a>
+    <a href="../projects.html" class="back-btn">
+        <i class="ph ph-arrow-left"></i> All Projects
+    </a>
 
-        <header class="semester-header">
-            <h1>Semester 2</h1>
-            <p class="subtitle">FEATURED PROJECTS</p>
-        </header>
+    <header class="semester-header">
+        <div class="repo-count">
+            <span class="pulse-dot"></span> Advanced Architecture
+        </div>
+        <h1>Semester 02</h1>
+        <p class="subtitle">ENTERPRISE SOLUTIONS & ARCHITECTURE</p>
+    </header>
 
-        <section class="featured-list">
-            
-            <article class="project-item">
-                <h3>Pigeon Service Management System</h3>
-                <p>A specialized system designed for managing service workflows and client interactions.</p>
-                <div class="tags">
-                    <span class="tag java">JAVA</span>
-                </div>
-            </article>
-
-            <article class="project-item">
-                <h3>Connect 4 Game</h3>
-                <p>A classic strategy game featuring custom winning logic and a JavaFX interface.</p>
-                <div class="tags">
-                    <span class="tag java">JAVA</span>
-                    <span class="tag javafx">JAVAFX</span>
-                    <span class="tag maven">MAVEN</span>
-                </div>
-            </article>
-
-            <article class="project-item">
-                <h3>PulseFit Customer Management</h3>
-                <p>Comprehensive gym management software with a focus on UI/UX and database integration.</p>
-                <div class="tags">
-                    <span class="tag java">JAVA</span>
-                    <span class="tag javafx">JAVAFX</span>
-                    <span class="tag maven">MAVEN</span>
-                    <span class="tag css">CSS</span>
-                </div>
-            </article>
-
-        </section>
-
-        <section class="assignments-section">
-            <p class="subtitle">COURSE ASSIGNMENTS</p>
-            <div class="assignment-grid">
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 1</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 2</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 3</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 4</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 5</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 6</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 7</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 8</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 9</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 10</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 11</div>
-                <div class="assign-card"><i class="ph ph-note-pencil"></i> Assignment 12</div>
+    <section class="featured-list">
+        <article class="project-item">
+            <div class="project-preview">
+                <img src="../images/git repo img/pulsefit.png" alt="PulseFit Remake">
+                <a href="https://github.com/lasandisal/PulseFit_Layered_Architecture.git" target="_blank" class="github-overlay">
+                    <i class="ph ph-github-logo"></i> View Source
+                </a>
             </div>
-        </section>
-    </main>
+            <div class="project-info">
+                <h3>PulseFit: Layered Remake</h3>
+                <p>Refactored Semester 01 system using DAO/DTO patterns and Layered Architecture for better scalability and decoupled logic.</p>
+                <div class="tags">
+                    <span class="tag java">JAVA</span>
+                    <span class="tag javafx">JAVAFX</span>
+                    <span class="tag maven">MAVEN</span>
+                    <span class="tag mysql">MySQL</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-item">
+            <div class="project-preview">
+                <img src="../images/git repo img/Screenshot 2026-03-16 211626.png" alt="Portfolio">
+                <a href="#" target="_blank" class="github-overlay">
+                    <i class="ph ph-github-logo"></i> View Source
+                </a>
+            </div>
+            <div class="project-info">
+                <h3>Mahogany Glass Portfolio</h3>
+                <p>Modern personal branding site focusing on Glassmorphism UI, responsive CSS grids, and interactive user experiences.</p>
+                <div class="tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                    <span class="tag js">JAVASCRIPT</span>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-item">
+            <div class="project-preview">
+                <img src="../images/git repo img/POS-System-in-Australia-1.webp" alt="POS System">
+                <a href="#" target="_blank" class="github-overlay">
+                    <i class="ph ph-github-logo"></i> View Source
+                </a>
+            </div>
+            <div class="project-info">
+                <h3>POS System</h3>
+                <p>A comprehensive Point of Sale solution featuring real-time inventory tracking and automated billing.</p>
+                <div class="tags">
+                    <span class="tag html">HTML</span>
+                    <span class="tag css">CSS</span>
+                    <span class="tag js">JAVASCRIPT</span>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section class="assignments-section">
+        <p class="subtitle">LAB REPORTS & ASSIGNMENTS</p>
+        <div class="assignment-grid">
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 01</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 02</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 03</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 04</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 05</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 06</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 07</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 08</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 09</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 10</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 11</span>
+            </a>
+            <a href="#" class="assign-card">
+                <i class="ph ph-notebook"></i>
+                <span>Assignment 12</span>
+            </a>
+            </div>
+    </section>
+</main>
+
+<footer class="mahogany-footer">
+ 
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">lasandisal<span>.</span></a>
+            <p>Architecting seamless digital experiences through robust code and bold design.</p>
+        </div>
+
+        <div class="footer-nav">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lasandi-salwathura" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://github.com/lasandisal" target="_blank"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.instagram.com/__thebubblegum___?igsh=MXA1ZXpwdG9oanhiZA==" target="_blank" ><i class="ph ph-instagram-logo"></i></a>
+                <!-- <a href="https://www.facebook.com/share/14bPPUoTMj4/"  target="_blank"><i class="ph ph-facebook-logo"></i></i></a> -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+    <p>&copy; 2026 Lasandi Salwathura. Designed & Developed with passion. All Rights Reserved.</p>
+</div>
+</footer>
 
 </body>
 </html>

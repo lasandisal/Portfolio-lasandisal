@@ -1,0 +1,210 @@
+/* ==========================================================================
+   ROBOTICS PROJECT VIEW - FULL INTEGRATED STYLES
+   ========================================================================== */
+:root {
+    --arduino-blue: #00979d;
+    --circuit-green: #2ecc71;
+}
+
+.robotics-view {
+    padding: 140px 8% 80px;
+    background: var(--bg-dark);
+}
+
+.tech-badge {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(0, 151, 157, 0.1);
+    border: 1px solid var(--arduino-blue);
+    color: var(--arduino-blue);
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* --- Video Section --- */
+.video-container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 50px;
+    margin-bottom: 80px;
+    align-items: center;
+}
+
+.video-wrapper {
+    background: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--glass-border);
+    box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.video-wrapper video {
+    width: 100%;
+    display: block;
+}
+
+/* --- Specs Grid (Hardware & Gallery) --- */
+.specs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.components-list h3, .photo-gallery h3 {
+    margin-bottom: 25px;
+    font-family: var(--font-heading);
+    color: var(--text-white);
+}
+
+.components-list ul {
+    list-style: none;
+}
+
+.components-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--glass-border);
+    color: var(--text-dim);
+    font-size: 0.95rem;
+}
+
+.components-list li span {
+    color: var(--arduino-blue);
+    font-weight: 700;
+    margin-right: 10px;
+}
+
+/* --- Stills Gallery --- */
+.stills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.stills-grid img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 1px solid var(--glass-border);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.stills-grid img:hover {
+    transform: scale(1.05) translateY(-5px);
+    border-color: var(--arduino-blue);
+    box-shadow: 0 10px 20px rgba(0, 151, 157, 0.2);
+}
+
+/* --- Bill of Materials Table --- */
+.bom-section {
+    margin-top: 60px;
+}
+
+.bom-section h3 {
+    margin-bottom: 30px;
+    font-family: var(--font-heading);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-white);
+}
+
+.bom-table-wrapper {
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 20px;
+    /* Allows table to scroll on small mobile screens */
+    overflow-x: auto;
+    backdrop-filter: blur(10px);
+}
+
+.bom-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    min-width: 500px; /* Ensures table doesn't get too squashed */
+}
+
+.bom-table th {
+    padding: 18px 15px;
+    color: var(--arduino-blue);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    border-bottom: 1px solid var(--glass-border);
+}
+
+.bom-table td {
+    padding: 15px;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.03);
+    transition: 0.3s;
+}
+
+.bom-table tr:last-child td {
+    border-bottom: none;
+}
+
+.bom-table tr:hover td {
+    color: var(--text-white);
+    background: rgba(0, 151, 157, 0.05);
+}
+
+/* ==========================================================================
+   MEDIA QUERIES (Responsive Logic)
+   ========================================================================== */
+
+/* Tablet & Large Mobile */
+@media (max-width: 992px) {
+    .video-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .specs-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .video-description {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .robotics-view {
+        padding: 100px 5% 60px;
+    }
+
+    .project-hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .stills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on mobile */
+    }
+    
+    .bom-table-wrapper {
+        padding: 10px;
+    }
+}
+
+/* Small Phones */
+@media (max-width: 480px) {
+    .stills-grid {
+        grid-template-columns: 1fr; /* Single column for photos */
+    }
+
+    .bom-table th, .bom-table td {
+        padding: 12px 10px;
+        font-size: 0.8rem;
+    }
+}
