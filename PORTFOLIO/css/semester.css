@@ -1,0 +1,311 @@
+:root{
+    --font-heading: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@keyframes sparkle-roll {
+    0% { transform: rotate(0deg); }
+    30% { transform: rotate(360deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes icon-pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(230, 57, 70, 0); }
+    50% { transform: scale(1.05); box-shadow: 0 0 20px 2px rgba(230, 57, 70, 0.15); }
+}
+
+.semester-view {
+    padding: 100px 8% 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.semester-header { margin-bottom: 60px; }
+.semester-header h1 { font-size: 3rem; font-family: var(--font-heading); }
+.subtitle { 
+    color: var(--accent-red); 
+    letter-spacing: 3px; 
+    font-size: 0.8rem; 
+    font-weight: 700; 
+    margin-bottom: 20px;
+}
+
+.featured-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.project-item {
+    display: grid;
+    grid-template-columns: 350px 1fr; 
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid var(--glass-border);
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+
+.project-preview {
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+    height: 200px;
+}
+
+.project-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+}
+
+.github-overlay {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(13, 5, 5, 0.8);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: 600;
+    opacity: 0; 
+    transition: 0.4s;
+}
+
+.project-preview:hover .github-overlay { opacity: 1; }
+.project-preview:hover img { transform: scale(1.1); }
+
+.github-overlay i { font-size: 2rem; color: var(--accent-red); }
+
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 15px;
+}
+
+.tag {
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    transition: 0.3s;
+}
+
+.tag.java { color: #f89820; border-color: rgba(248, 152, 32, 0.3); }
+.tag.mysql { color: #00758f; border-color: rgba(0, 117, 143, 0.3); }
+
+
+.tag.javafx { 
+    color: #5382a1; 
+    border-color: rgba(83, 130, 161, 0.4); 
+}
+
+.tag.maven { 
+    color: #C71A36; 
+    border-color: rgba(199, 26, 54, 0.4); 
+}
+
+.tag.html { 
+    color: #E34F26; 
+    border-color: rgba(227, 79, 38, 0.4); 
+}
+
+.tag.css { 
+    color: #1572B6; 
+    border-color: rgba(21, 114, 182, 0.4); 
+}
+
+.tag.js { 
+    color: #F7DF1E; 
+    border-color: rgba(247, 223, 30, 0.4); 
+}
+
+.tag:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transform: translateY(-2px);
+}
+
+.assignments-section {
+    padding: 30px 0;
+}
+
+.assignment-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 20px;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.assign-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid var(--glass-border);
+    border-radius: 15px;
+    padding: 25px 15px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    text-decoration: none;
+    min-width: 0;
+}
+
+.assign-card i {
+    font-size: 2rem;
+    color: var(--text-white);
+    opacity: 0.8;
+    transition: 0.3s;
+}
+
+.assign-card span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-white);
+    text-align: center;
+}
+
+.assign-card:hover {
+    background: rgba(230, 57, 70, 0.05); 
+    border-color: rgba(230, 57, 70, 0.4);
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3), 
+                0 0 15px rgba(230, 57, 70, 0.1);
+}
+
+.assign-card:hover i {
+    color: var(--accent-red);
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1100px) {
+    .assignment-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .assignment-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .assign-card span {
+        font-size: 0.8rem;
+    }
+    .assign-card i {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 850px) {
+    .project-item {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    .project-preview { height: 250px; }
+}
+
+
+@media (max-width: 900px) {
+    .semester-view {
+    padding: 130px 8% 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+}
+
+.archive-row.locked {
+    filter: grayscale(1) opacity(0.5); 
+    pointer-events: none; 
+    position: relative;
+    user-select: none;
+}
+
+.archive-row.locked::after {
+    content: 'Engineering in Progress';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    background: var(--accent-red);
+    color: white;
+    padding: 10px 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    z-index: 10;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    opacity: 0.8;
+}
+
+.lock-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 5px 12px;
+    border-radius: 50px;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: var(--text-white);
+    margin-bottom: 15px;
+    width: fit-content;
+}
+
+.glass-btn.disabled {
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.01);
+    border-style: dashed; 
+}
+
+.btn-content p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+.btn-content small {
+    display: block;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    font-weight: 400;
+}
+
+.archive-row.locked:hover {
+    filter: grayscale(0.8) opacity(0.7);
+    transition: 0.5s ease;
+}
+
+.tag.csharp { 
+    color: #a179dc; 
+    border-color: rgba(161, 121, 220, 0.4); 
+}
+
+.tag.sqlserver { 
+    color: #ff3333; 
+    border-color: rgba(255, 51, 51, 0.4); 
+}
+
+.tag.dot-net { 
+    color: #512bd4; 
+    border-color: rgba(81, 43, 212, 0.4); 
+}

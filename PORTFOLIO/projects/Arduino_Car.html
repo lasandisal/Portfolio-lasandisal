@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arduino | Obstacle Avoider</title>
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/semester.css">
+    <link rel="stylesheet" href="../css/robotics-project.css">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+</head>
+<body>
+
+<header>
+    <nav>
+        <div class="logo">
+            <a href="../index.html">lasandisal<span>.</span></a>
+        </div>
+        <ul>
+            <li class="menu-label">Navigation</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../projects.html" class="active">Projects</a></li>
+            <li><a href="../gallery.html">Gallery</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+        </ul>
+        <div class="menu-icon" id="mobile-menu">
+                <i class="ph ph-list"></i> </div>
+    </nav>
+</header>
+
+<main class="robotics-view">
+    <a href="../projects.html" class="back-btn">
+        <i class="ph ph-arrow-left"></i> All Projects
+    </a>
+    <section class="project-hero">
+        <div class="tech-badge">Arduino IDE • C++ • Robotics</div>
+        <h1>Bluetooth-Controlled Obstacle Avoiding Robot</h1>
+        <p class="subtitle">An autonomous rover developed for the 'Robotic Application Development' module, featuring real-time obstacle evasion and remote Bluetooth override.</p>
+    </section>
+
+    <section class="video-container">
+        <div class="video-wrapper">
+    <video 
+        controls 
+        muted 
+        playsinline
+        poster="../assets/arduino.png" 
+        preload="metadata"
+        class="robot-preview-vid">
+        <source src="../assets/WhatsApp Video 2026-03-16 at 11.44.42 PM.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+        <div class="video-description">
+            <h3>Module Objective</h3>
+            <p>The core objective was to synchronize an HC-SR04 Ultrasonic sensor with a servo-driven scanning routine. The logic, written in C++ via the Arduino IDE, determines the safest path forward while allowing for manual intervention through a Bluetooth Control** interface.</p>
+        </div>
+    </section>
+
+    <section class="specs-grid">
+        <div class="components-list">
+            <h3><i class="ph ph-cpu"></i> System Specs</h3>
+            <ul>
+                <li><span>Development Env:</span> Arduino IDE</li>
+                <li><span>Logic Language:</span> C++ (Arduino Sketch)</li>
+                <li><span>Remote Protocol:</span> Bluetooth Serial (HC-05)</li>
+                <li><span>Sensor Array:</span> Ultrasonic & Multi-LEDs</li>
+                <li><span>Driver Logic:</span> Dual H-Bridge PWM control</li>
+            </ul>
+        </div>
+
+        <div class="photo-gallery">
+            <h3>Project Still</h3>
+            <div class="stills-grid">
+                <img src="../assets/arduino whatsapp.jpeg" alt="Esoft Robotics Project">
+                <img src="../assets/WhatsApp Image 2026-03-16 at 11.59.01 PM.jpeg" alt="Esoft Robotics Project">
+                <img src="../assets/WhatsApp Image 2026-03-16 at 11.59.02 PM.jpeg" alt="Esoft Robotics Project">
+            </div>
+        </div>
+    </section>
+
+    <section class="bom-section">
+        <h3><i class="ph ph-list-checks"></i> Bill of Materials (BOM)</h3>
+        <div class="bom-table-wrapper">
+            <table class="bom-table">
+                <thead>
+                    <tr>
+                        <th>Item Name</th>
+                        <th>Qty</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Arduino ATmega328P UNO R3</td><td>01</td></tr>
+                    <tr><td>L298N Motor Controller Module</td><td>01</td></tr>
+                    <tr><td>HC-05 Bluetooth Module</td><td>01</td></tr>
+                    <tr><td>Ultrasonic Sensor (HC-SR04)</td><td>01</td></tr>
+                    <tr><td>SG90 Servo Motor</td><td>01</td></tr>
+                    <tr><td>18650 Battery Set + Holder</td><td>01</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</main>
+
+<footer class="mahogany-footer">
+ <div class="footer-top-glow"></div>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <a href="index.html" class="footer-logo">lasandisal<span>.</span></a>
+            <p>Architecting seamless digital experiences through robust code and bold design.</p>
+        </div>
+
+        <div class="footer-nav">
+            <h4>Explore</h4>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Connect</h4>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/lasandi-salwathura" target="_blank"><i class="ph ph-linkedin-logo"></i></a>
+                <a href="https://github.com/lasandisal" target="_blank"><i class="ph ph-github-logo"></i></a>
+                <a href="https://www.instagram.com/__thebubblegum___?igsh=MXA1ZXpwdG9oanhiZA==" target="_blank" ><i class="ph ph-instagram-logo"></i></a>
+                <!-- <a href="https://www.facebook.com/share/14bPPUoTMj4/"  target="_blank"><i class="ph ph-facebook-logo"></i></i></a> -->
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer-bottom">
+    <p>&copy; 2026 Lasandi Salwathura. Designed & Developed with passion. All Rights Reserved.</p>
+</div>
+</footer>
+<script src="../js/script.js"></script>
+</body>
+</html>
