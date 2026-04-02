@@ -218,6 +218,8 @@ header nav.scrolled .logo {
 .logo span { color: var(--text-white); }
 
 nav ul {
+    width: fit-content;      
+    margin-left: auto;
     display: flex;
     list-style: none;
     background: var(--glass);

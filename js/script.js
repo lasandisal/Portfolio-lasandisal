@@ -89,3 +89,34 @@ const progressObserver = new IntersectionObserver((entries) => {
 document.querySelectorAll('.progress-circle').forEach(circle => {
     progressObserver.observe(circle);
 });
+
+
+function togglePlay(id, control) {
+    const video = document.getElementById(id);
+    const icon = control.querySelector('i');
+
+    if (video.paused) {
+        video.play();
+        icon.classList.replace('fa-play', 'fa-pause');
+        control.style.opacity = "0.5";
+    } else {
+        video.pause();
+        icon.classList.replace('fa-pause', 'fa-play');
+        control.style.opacity = "1";
+    }
+}
+
+function toggleMute(id, control, event) {
+    event.stopPropagation(); 
+    
+    const video = document.getElementById(id);
+    const icon = control.querySelector('i');
+
+    if (video.muted) {
+        video.muted = false;
+        icon.classList.replace('fa-volume-xmark', 'fa-volume-high');
+    } else {
+        video.muted = true;
+        icon.classList.replace('fa-volume-high', 'fa-volume-xmark');
+    }
+}

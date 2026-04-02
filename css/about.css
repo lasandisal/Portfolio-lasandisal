@@ -615,4 +615,15 @@
         font-size: 0.75rem; 
         margin-top: 10px;
     }
+
+    #achievements h2 {
+        font-size: 2rem;       
+        margin-bottom: 30px;  
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .achievement {
+        padding: 25px;        
+    }
 }
